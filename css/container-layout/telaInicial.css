@@ -19,10 +19,13 @@ body {
     flex-direction: row;
     background-image: linear-gradient(to right, #011C42, #084787);
     justify-content: space-between;
+    height: 9vh;
 
 }
 .titulo{
-    color: white;
+    margin-left: 15px;
+    color: #e0cccc;
+    font-family: "Poppins", serif ;
 }
 
 .menu a{
@@ -33,7 +36,9 @@ body {
 .menu li{
     display: inline-block;
     margin: 30px;
-    font-size: 20px;
+    font-size: 22px;
+    color: #e0cccc;
+    font-family: "Poppins", sans-serif ;
  }
 .formulario{
     margin: 0;
@@ -44,7 +49,81 @@ body {
     width: 75%;
     margin-top: 50px;
     border-radius: 15px;
+    
 }
 .formulario h1, input, img{ 
     display: inline-block;
 }
+
+.Logo{
+    display: flex;
+    align-items: flex-start;
+    gap: 300px; /* espaço entre imagem e texto */
+    margin-bottom: 30px;
+}
+
+
+.Logo img {
+    height: auto;
+    margin-top: 110px;
+    margin-left: 30px;
+}
+
+.Logo h1 {
+    margin-top: 130px;
+    color: #e0cccc;
+    font-size: 3.0rem;
+    font-family: "Poppins", serif ;
+    
+}
+
+.contratar {
+    display: flex;
+    align-items: center;   /* alinha verticalmente */
+    gap: 20px;             /* espaço entre botão e link */
+    margin-top: -90px;     /* sobe o bloco (ajuste conforme necessário) */
+    margin-left: 750px;    /* empurra um pouco pra direita (ou use flexbox pai) */
+}
+
+.contratar input {
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    border: none;
+    background-color:#e0cccc ;
+}
+
+.contratar a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.contratar input:hover{
+    background-color: #AAD4FF;
+    transition: 0.5s all;
+     color: #000;
+}
+.contratar a:hover{
+    transition: 0.5s all;
+    color: #dcbaba;
+}
+
+#btn{
+    border: 2px solid #062756;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+
+
+.menu li a:hover{
+    background-color: #AAD4FF;
+    transition: 0.5s all;
+    color: black;
+}
+/*background-color: rgb(19, 117, 237);
+/*#dcbaba
