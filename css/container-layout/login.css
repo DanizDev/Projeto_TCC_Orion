@@ -1,46 +1,33 @@
-/* ------------------------------
-   RESET & FONTES
---------------------------------*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Lexend";
-  font-weight: 400;
+/*Variáveis que irei utilizar.*/
+
+
+.cabecalho{
+  padding: 10px 20px ;
 }
 
-/* Fontes customizadas (Lexend) */
-@font-face {
-  font-family: "Lexend";
-  src: url("assets/Lexend/LexendDeca-Light.ttf");
-  font-weight: 300;
-  font-style: normal;
+
+/*---------------
+Configurações do cabeçalho
+------------------*/
+
+.tituloM {
+  position: absolute;
+  top: 15px;      /* ajuste vertical conforme o logo */
+  left: 110px;    /* ajuste horizontal: logo tem 90px + 20px de margem */
 }
 
-@font-face {
-  font-family: "Lexend";
-  src: url("assets/Lexend/LexendDeca-Regular.ttf");
-  font-weight: 400;
-  font-style: normal;
+.tituloM h1{
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-left: 5px;
 }
 
-@font-face {
-  font-family: "Lexend";
-  src: url("assets/Lexend/LexendDeca-SemiBold.ttf");
-  font-weight: 600;
-  font-style: normal;
-}
-
-/* ------------------------------
-   ESTILOS BÁSICOS DO BODY
---------------------------------*/
-body {
-  background: linear-gradient(90deg, #011c42, #0260bc 100%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  color: black;
+#imgLogo {
+  width: 90px;
+  height: auto;
+  margin-left: 0;
+  cursor: pointer;
 }
 
 /* Títulos principais */
@@ -131,12 +118,44 @@ p {
   text-align: center;
 }
 
+/*Estilização do "Esqueceu a senha?"*/
+
+.esqueci-senha{
+  position: relative;
+  display: inline-block;
+  text-decoration: none; /* tira o sublinhado */
+  color: #333;            
+  font-size: 14px;          
+  cursor: pointer;        
+  transition: color 0.3s; /* suaviza a troca de cor no hover */
+}
+
+.esqueci-senha:hover::after {
+  width: 100%; 
+}
+
+.esqueci-senha::after {
+  content: "";
+  position: absolute;
+  width: 0;             
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background: #0c70d3;
+  transition: width 0.3s ease;
+}
+
+.esqueci-senha:hover{
+  color: #0c70d3;
+}
+  
 /* ------------------------------
-   LAYOUT PRINCIPAL
+      LAYOUT PRINCIPAL
 --------------------------------*/
-.container-principal {
+.container-principall {
   width: 100%;
   height: 100%;
+  margin-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -146,7 +165,7 @@ p {
 .card {
   width: 842px;
   max-width: 95%;
-  min-height: 500px;
+  min-height: 450px;
   background-color: white; /* FUNDO BRANCO EM TODO O CARD */
   border-radius: 32px;
   padding: 32px 20px;
@@ -207,7 +226,7 @@ p {
   content: "";
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, #011c42, #0260bc 100%);
+  background-color: #011C42;
   position: absolute;
   top: 0;
   right: 0;
@@ -215,7 +234,7 @@ p {
   background-position: center;
   z-index: 1;
   transition: all 0.5s;
-  opacity: 0.1; /* deixa bem sutil */
+  opacity: 0.9; /* deixa bem sutil */
 }
 
 /* ------------------------------

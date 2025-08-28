@@ -1,37 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="../../css/container-layout/login.css" >
+    <link rel="stylesheet" href="../../css/container-layout/login.css">
+    <link rel="stylesheet" href="../../css/componentes/CCB.css">
     <script src="../../js/login.js" defer></script>
     <!-- Define o ícone (favicon) que aparece na aba do navegador -->
     <link rel="icon" href="../../src/images/orion.png" type="image/x-icon" />
 </head>
+
 <body>
-    <section class="container-principal">
+    <header>
+        <div class="cabecalho">
+            <img alt="Logo" id="imgLogo" src="../../src/images/orion.png">
+            <div class="tituloM">
+                <h1>Orion IA</h1>
+            </div>
+        </div>
+    </header>
+
+    <section class="container-principall">
         <div class="card loginActive">
             <!-- Card principal com as seções de login/cadastro -->
             <div class="esquerda">
-                 <!-- Lado esquerdo: área do formulário de Login e texto explicativo -->
+                <!-- Lado esquerdo: área do formulário de Login e texto explicativo -->
                 <div class="formLogin">
                     <h2>Login</h2>
                     <form>
                         <input type="text" placeholder="E-mail">
                         <input type="password" placeholder="Senha">
+                        <a href="##" class="esqueci-senha">Esqueceu sua senha? </a>
                         <button type="submit">Entrar</button>
                     </form>
                 </div>
                 <div class="facaLogin">
                     <h2> Já possui </br> uma conta? </h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quae veritatis. Incidunt asperiores quos accusantium sint consequatur ea corrupti, saepe odit n
-                    nt modi animi magni.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quae veritatis. Incidunt
+                        asperiores quos accusantium sint consequatur ea corrupti, saepe odit n
+                        nt modi animi magni.</p>
                     <button class="loginButton"> Faça login </button>
                 </div>
             </div>
             <div class="direita">
-                 <!-- Lado direito: área do formulário de Cadastro e texto explicativo -->
+                <!-- Lado direito: área do formulário de Cadastro e texto explicativo -->
                 <div class="formCadastro">
                     <h2>Cadastro</h2>
                     <form>
@@ -44,13 +58,16 @@
                 </div>
                 <div class="facaCadastro">
                     <h2> Não possui </br> uma conta?</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque facilis, iusto dicta soluta, fugiat ratione exercitatione
-                    Laudantium, enim iure?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque facilis, iusto dicta soluta,
+                        fugiat ratione exercitatione
+                        Laudantium, enim iure?</p>
                     <button class="cadastroButton"> Cadastre-se </button>
-                    
+
                 </div>
             </div>
         </div>
     </section>
+
 </body>
+
 </html>
