@@ -1,8 +1,6 @@
-/*Variáveis que irei utilizar.*/
-
-
 .cabecalho{
-  padding: 10px 20px ;
+  padding: 2px 5px ;
+  
 }
 
 :root{
@@ -16,8 +14,8 @@ Configurações do cabeçalho
 
 .tituloM {
   position: absolute;
-  top: 15px;      /* ajuste vertical conforme o logo */
-  left: 110px;    /* ajuste horizontal: logo tem 90px + 20px de margem */
+  top: 8px;      /* ajuste vertical conforme o logo */
+  left: 109px;   
 }
 
 .tituloM h1{
@@ -25,8 +23,9 @@ Configurações do cabeçalho
   font-weight: bold;
   color: #ffffff;
   font-family: "Lexend", sans-serif;
-  font-weight: 300;
-  margin-left: 5px;
+  font-weight: 200;
+  margin-left: 0;
+  margin-top: 8px;
 }
 
 
@@ -34,16 +33,23 @@ Configurações do cabeçalho
 /*Imagens*/
 
 #imgLogo {
-  width: 90px;
-  height: auto;
-  margin-left: 0;
+  width: 70px;
+  height: 9vh;
+  margin-left: 25px;
   cursor: pointer;
 }
 
 #walle {
   height: auto;
-  margin-bottom: 95px;
   width: 90px;
+  margin-bottom: 40px;
+}
+
+#walle2 {
+  
+  height: auto;
+  width: 90px;
+  margin-bottom: 40px;
 }
 
 /* Títulos principais */
@@ -63,18 +69,20 @@ h2 {
 form {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 45px;
+  align-items: center;
 }
 
 button {
-    border-radius: 28px ;
-    width: 215px;
-    min-height: 40px;
-    align-content: center;
+  border-radius: 28px ;
+  width: 215px;
+  min-height: 30px;
+  align-content: center;
 }
 
 input{
-    width: 350px;
+  width: 350px;
+  
 }
 
 input,
@@ -106,18 +114,20 @@ form button {
   justify-content: center;
   font-family: "Lexend", sans-serif;
   font-weight: 500;
-  width: 215px;
-  padding: 10px;
+  width: 200px;
+  padding: 8px;
   cursor: pointer;
 }
 
 /* Botões secundários (troca tela) */
 .facaLogin button {
   background-color: transparent;
-  border: 2px solid black;
-  color: black;
-  padding: 12px 24px;
-  font-weight: 600;
+  width: 200px;
+  border: 2px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  padding: 8px 24px;
+  font-family: "Lexend", sans-serif;
+  font-weight: 300;
   cursor: pointer;
 }
 
@@ -125,8 +135,10 @@ form button {
   background-color: transparent;
   border: 2px solid white;
   color: white;
-  padding: 12px 24px;
-  font-weight: 600;
+  width: 200px;
+  font-family: "Lexend", sans-serif;
+  padding: 8px 24px;
+  font-weight: 300;
   cursor: pointer;
 }
 
@@ -138,8 +150,8 @@ button:hover {
 
 /* Texto auxiliar */
 p {
-  margin-bottom: 32px;
-  width: 400px;
+  margin-bottom: 40px;
+  width: 300px;
   text-align: center;
 }
 
@@ -152,13 +164,15 @@ p {
   color: #333;            
   font-size: 14px;     
   font-family: "Lexend", sans-serif;
+  align-self: flex-start;
+  margin-left: 10px;
   font-weight: 400;     
   cursor: pointer;        
   transition: color 0.3s; /* suaviza a troca de cor no hover */
 }
 
 .esqueci-senha:hover::after {
-  width: 40%; 
+  width: 97%; 
 }
 
 .esqueci-senha::after {
@@ -175,6 +189,14 @@ p {
 .esqueci-senha:hover{
   color: #0c70d3;
 }
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* link fica alinhado à esquerda */
+  gap: 5px; /* só entre input e link */
+}
+
   
 /* ------------------------------
       LAYOUT PRINCIPAL
@@ -190,9 +212,9 @@ p {
 }
 
 .card {
-  width: 842px;
+  width: 1150px;
   max-width: 95%;
-  min-height: 450px;
+  min-height: 550px;
   background-color: white; /* FUNDO BRANCO EM TODO O CARD */
   border-radius: 15px;
   padding: 32px 20px;
@@ -228,11 +250,22 @@ p {
 .facaCadastro {
   position: absolute;
   z-index: 2;
+  .facaLogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;    /* centraliza tudo na mesma linha vertical */
+  justify-content: center;
+  text-align: center;
+  gap: 20px;              /* controla a distância entre robô, texto e botão */
+  position: relative;
+  z-index: 2;             /* mantém visível acima do overlay */
+  gap: 80px;
+}
 }
 
 .facaLogin h2,
 .facaLogin p {
-  color: black; /* lado login com texto preto */
+  color: rgb(255, 255, 255); /* lado login com texto preto */
 }
 
 .facaCadastro {
