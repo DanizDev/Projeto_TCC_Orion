@@ -1,20 +1,18 @@
 .cabecalho{
   padding: 2px 5px ;
-  
 }
 
 :root{
   --tituloCon: #0D47A1;
 }
 
-
-/*---------------
-Configurações do cabeçalho
+/*--------------- 
+Configurações do cabeçalho 
 ------------------*/
 
 .tituloM {
   position: absolute;
-  top: 8px;      /* ajuste vertical conforme o logo */
+  top: 8px;      
   left: 109px;   
 }
 
@@ -28,10 +26,7 @@ Configurações do cabeçalho
   margin-top: 8px;
 }
 
-
-
 /*Imagens*/
-
 #imgLogo {
   width: 70px;
   height: 9vh;
@@ -42,14 +37,13 @@ Configurações do cabeçalho
 #walle {
   height: auto;
   width: 90px;
-  margin-bottom: 40px;
+  margin-bottom: 8px;   /* diminuído para reduzir espaço */
 }
 
 #walle2 {
-  
   height: auto;
   width: 90px;
-  margin-bottom: 40px;
+  margin-bottom: 8px;   /* diminuído também */
 }
 
 /* Títulos principais */
@@ -60,11 +54,10 @@ h2 {
   color: #0D47A1;
   margin-bottom: 70px;
   text-align: center;
-  font-weight: 300;
 }
 
-/* ------------------------------
-   FORMULÁRIOS & INPUTS
+/* ------------------------------ 
+FORMULÁRIOS & INPUTS 
 --------------------------------*/
 form {
   display: flex;
@@ -82,7 +75,6 @@ button {
 
 input{
   width: 350px;
-  
 }
 
 input,
@@ -155,12 +147,11 @@ p {
   text-align: center;
 }
 
-/*Estilização do "Esqueceu a senha?"*/
-
+/*Estilização dos links*/
 .esqueci-senha{
   position: relative;
   display: inline-block;
-  text-decoration: none; /* tira o sublinhado */
+  text-decoration: none;
   color: #333;            
   font-size: 14px;     
   font-family: "Lexend", sans-serif;
@@ -168,7 +159,7 @@ p {
   margin-left: 10px;
   font-weight: 400;     
   cursor: pointer;        
-  transition: color 0.3s; /* suaviza a troca de cor no hover */
+  transition: color 0.3s;
 }
 
 .esqueci-senha:hover::after {
@@ -190,34 +181,59 @@ p {
   color: #0c70d3;
 }
 
+.maisInfos {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;            
+  font-size: 14px;     
+  font-family: "Lexend", sans-serif;
+  font-weight: 400;     
+  cursor: pointer;        
+  transition: color 0.3s;
+}
+
+.maisInfos::after {
+  content: "";
+  position: absolute;
+  width: 0;             
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background: #0c70d3;
+  transition: width 0.3s ease;
+}
+
+.maisInfos:hover{
+  color: #0c70d3;
+}
+
 .input-group {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* link fica alinhado à esquerda */
-  gap: 5px; /* só entre input e link */
+  align-items: flex-start;
+  gap: 5px; 
 }
 
-  
-/* ------------------------------
-      LAYOUT PRINCIPAL
---------------------------------*/
+/* ------------------------------ 
+LAYOUT PRINCIPAL
+ --------------------------------*/
 .container-principall {
   width: 100%;
   height: 100%;
-  margin-top: 40px;
+  margin-top: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .card {
   width: 1150px;
   max-width: 95%;
   min-height: 550px;
-  background-color: white; /* FUNDO BRANCO EM TODO O CARD */
+  background-color: white;
   border-radius: 15px;
-  padding: 32px 20px;
+  padding: 29px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -250,28 +266,28 @@ p {
 .facaCadastro {
   position: absolute;
   z-index: 2;
-  .facaLogin {
+}
+
+.facaLogin {
   display: flex;
   flex-direction: column;
-  align-items: center;    /* centraliza tudo na mesma linha vertical */
+  align-items: center;
   justify-content: center;
   text-align: center;
-  gap: 20px;              /* controla a distância entre robô, texto e botão */
-  position: relative;
-  z-index: 2;             /* mantém visível acima do overlay */
-  gap: 80px;
+  gap: 20px;         
 }
-}
+
+.facaLogin p { margin: 0; } 
 
 .facaLogin h2,
 .facaLogin p {
-  color: rgb(255, 255, 255); /* lado login com texto preto */
+  color: rgb(255, 255, 255);
 }
 
 .facaCadastro {
   padding: 40px;
   border-radius: 32px;
-  color: white; /* texto branco para contraste */
+  color: white;
 }
 
 .facaCadastro h2,
@@ -279,8 +295,8 @@ p {
   color: white;
 }
 
-/* ------------------------------
-   BACKGROUND IMAGEM MÓVEL (mantida)
+/* ------------------------------ 
+BACKGROUND IMAGEM MÓVEL 
 --------------------------------*/
 .card::after {
   content: "";
@@ -294,11 +310,11 @@ p {
   background-position: center;
   z-index: 1;
   transition: all 0.5s;
-  opacity: 0.9; /* deixa bem sutil */
+  opacity: 0.9;
 }
 
-/* ------------------------------
-   ESTADOS: LOGIN ACTIVE
+/* ------------------------------ 
+ESTADOS: LOGIN ACTIVE 
 --------------------------------*/
 .card.loginActive .facaLogin {
   opacity: 0;
@@ -325,9 +341,9 @@ p {
   transform: translateX(50%);
 }
 
-/* ------------------------------
-   ESTADOS: CADASTRO ACTIVE
---------------------------------*/
+/* ------------------------------ 
+ESTADOS: CADASTRO ACTIVE
+ --------------------------------*/
 .card.cadastroActive .facaCadastro {
   opacity: 0;
   pointer-events: none;
@@ -353,8 +369,8 @@ p {
   transform: translateX(-50%);
 }
 
-/* ------------------------------
-   ESTADO INICIAL
+/* ------------------------------ 
+ESTADO INICIAL 
 --------------------------------*/
 .facaCadastro {
   transform: translateX(200%);
@@ -378,8 +394,8 @@ p {
   transition: all 0.3s 0;
 }
 
-/* ------------------------------
-   RESPONSIVIDADE
+/* ------------------------------ 
+RESPONSIVIDADE 
 --------------------------------*/
 @media (max-width: 768px) {
   .card {
