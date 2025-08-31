@@ -1,12 +1,12 @@
 function mostrarMenu() {
   const menu = document.getElementById("menuSuspenso");
-  
+
   // Alterna a classe "ativo" -> abre/fecha com animação
   menu.classList.toggle("ativo");
 }
 
 // Fecha o menu ao clicar fora dele
-document.addEventListener("click", function(event) {
+document.addEventListener("click", function (event) {
   const menu = document.getElementById("menuSuspenso");
   const userDiv = document.querySelector(".user");
 
