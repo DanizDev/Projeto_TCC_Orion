@@ -1,0 +1,213 @@
+body {
+    margin: 0; 
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(#062756, #0c70d3);
+}
+
+
+
+
+/*background-color: rgb(19, 117, 237);
+/*#dcbaba*/
+.nav-links {
+  display: flex;
+  gap: 55px;
+  margin-right: 20px;
+ 
+}
+
+.nav-links a {
+  color: #ffffff;
+  font-size: 24px;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 5px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background: #0c70d3;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #0c70d3;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+
+
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-image: linear-gradient(to right, #011C42, #084787);
+    justify-content: space-between;
+    height: 9vh;
+
+}
+
+.titulo{
+    margin-left: 15px;
+    color: #e0cccc;
+    font-family: "Poppins", serif ;
+}
+
+.Logo{
+    display: flex;
+    align-items: flex-start;
+    gap: 300px; /* espaço entre imagem e texto */
+    margin-bottom: 30px;
+}
+
+.Logo img {
+    display: flex;
+    height: auto;
+    margin-top: 110px;
+    margin-left: 30px;
+}
+
+.Logo h1 {
+    display: flex;
+    margin-top: 130px;
+    color: #e0cccc;
+    font-size: 3.0rem;
+    font-family: "Poppins", serif ;
+    
+}
+
+.menu li a:hover{
+    background-color: #AAD4FF;
+    transition: 0.5s all;
+    color: black;
+}
+
+
+
+
+.container-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 2px #ffffff;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #01122b 40%, #084787);
+    color: #0c70d3;
+    padding: 60px;
+    margin: 6% 10% 6% 10%; 
+    font-size: 20px;
+}
+.container-principal input{
+    padding: 10px 50px 10px 50px;
+    margin: 20px;
+}
+
+
+
+
+.planos{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+
+.bronze{
+  border: solid 1px white;
+  margin: 10px 10px 10px 10px;
+  padding: 20% 10% 20% 10%;
+  background-color: #062756;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.bronze:hover{
+  background-color: #ac5600;
+  transition: 0.5s all;
+  color: black;
+}
+.bronze input{
+  border: solid 1px #084787;
+  background-color: rgb(233, 226, 226);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.bronze input:hover{
+  background-color: #062756;
+  transition: 0.5s all;
+  color: #0c70d3;
+  border-radius: 10px;
+}
+
+
+
+
+.prata{
+  border: solid 1px white;
+  margin: 10px;
+  padding: 20px;
+  padding: 20% 10% 20% 10%;
+  background-color: #062756;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.prata:hover{
+  background-color:  #777474;
+  transition: 0.5s all;
+  color: black;
+}
+.prata input{
+  border: solid 1px #084787;
+  background-color: rgb(233, 226, 226);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.prata input:hover{
+  background-color: #062756;
+  transition: 0.5s all;
+  color: #0c70d3;
+  border-radius: 10px;
+}
+
+
+
+
+.ouro{
+  border: solid 1p;
+  margin: 10px;
+  padding: 20px;
+  padding: 20% 10% 20% 10%;
+  background-color: #062756;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.ouro:hover{
+  background-color: #ac9200d8;
+  transition: 0.5s all;
+  color: black;
+}
+.ouro input{
+  border: solid 1px #084787;
+  background-color: rgb(233, 226, 226);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.ouro input:hover{
+  background-color: #062756;
+  transition: 0.5s all;
+  color: #0c70d3;
+  border-radius: 10px;
+}
