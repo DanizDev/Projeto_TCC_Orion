@@ -1,12 +1,9 @@
-body {
-    margin: 0; 
-    min-height: 100vh; 
-    display: flex;
-    flex-direction: column;
-    background-image: linear-gradient(#062756, #0c70d3);
+#imgLogo{
+  width: 60px;
+  height: auto;
+  margin-left: 10px;
+  cursor: pointer;
 }
-
-
 
 
 /*background-color: rgb(19, 117, 237);
@@ -49,6 +46,10 @@ body {
 
 
 
+#senha{
+  text-align: center;
+}
+
 
 .cabecalho{
     display: flex;
@@ -57,7 +58,6 @@ body {
     background-image: linear-gradient(to right, #011C42, #084787);
     justify-content: space-between;
     height: 9vh;
-
 }
 
 .titulo{
@@ -109,6 +109,7 @@ body {
     padding: 60px;
     margin: 13% 35% 0 35%;
     font-size: 20px;
+    background-color: azure; 
 }
 .container-principal input{
     padding: 10px 50px 10px 50px;

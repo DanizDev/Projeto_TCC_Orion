@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../../css/">
-    <link rel="stylesheet" type="text/css" href="../../css/componentes/">
-    <link rel="stylesheet" type="text/css" href="../../css/componentes/">
-    <link rel="stylesheet" type="text/css" href="../../css/componentes/">
+    <link rel="stylesheet" href="../../css/container-layout/planos.css">
+    <link rel="stylesheet" href="../../css/componentes/CCB.css">
+    <link rel="stylesheet" href="../../css/componentes/fonts.css">
+    
+    <!-- Define o ícone (favicon) que aparece na aba do navegador -->
+    <link rel="icon" href="../../src/images/orion.png" type="image/x-icon" />
     <title>Pagina de Planos</title>
 </head>
 <body>
+
     <header>
         <div class="cabecalho">
-                <div class="titulo">
-                    <h1> Orion IA</h1>
-                </div>
+            <img alt="Logo" id="imgLogo" src="../../src/images/orion.png">
+
                 
                 <nav class="nav-links">
                     <a href="##">Sobre nós</a>
@@ -27,35 +29,72 @@
 
 
         <div class="container-principal">
-            <h1>titulo</h1>
+            <h1>Planos para assinaturas</h1>
             <div class="planos">
                 
 
                 <div class="bronze">
 
                     <h3>Plano Bronze</h3>
-                    <p>texto</p>
+                    <img id="medalha_bronze" src="../../src/images/Icons/bronze.png" alt="">
+
+                        <ul class="textoBronze">
+                            <li>Identificação de phishing em mesnagens</li>
+                            <br>
+                            <li>Alerta diario ao usuário sobre o risco</li>
+                            <br>
+                            <li><img id="x" src="../../src/images/Icons/x.png" alt="">
+                                <s>Bloqueio automatico de remetente malicioso</s></li>
+                            <br>
+                            <li>
+                                <img id="x" src="../../src/images/Icons/x.png" alt="">
+                                <s>Envio de dados para o Dashboard</s></li>
+                        </ul>
 
                     <input type="submit" value="Contratar">
                 </div>
 
                 <div class="prata">
                     <h3>Plano Prata</h3>
-                    <p>texto</p>
+                    <img id="medalha_prata" src="../../src/images/Icons/prata.png" alt="">
+                    <p class="textoPrata">
+                        <ul>
+                            <li>Identificação de phishing em mesnagens</li>
+                            <br>
+                            <li>Alerta diario ao usuário sobre o risco</li>
+                            <br>
+                            <li>Bloqueio automatico de remetente malicioso</li>
+                            <br>
+                            <li>
+                                <img id="x" src="../../src/images/Icons/x.png" alt="">
+                                <s>Envio de dados para o Dashboard</s></li>
+                        </ul>
 
                     <input type="submit" value="Contratar">
                 </div>
 
-                <div class="ouro">
+                <div class="ouro">    
                     <h3>Plano Ouro</h3>
-                    <p>texto    </p>
+                    <img id="medalha_ouro" src="../../src/images/Icons/ouro.png" alt="">
 
-                    
+                        <ul class="textoOuro">
+                            <li>Identificação de phishing em mesnagens</li>
+                            <br>
+                            <li>Alerta diario ao usuário sobre o risco</li>
+                            <br>
+                            <li>Bloqueio automatico de remetente malicioso</li>
+                            <br>
+                            <li>Envio de dados para o Dashboard</li>
+                        </ul>
+
                     <input type="submit" value="Contratar">
                 </div>
 
             </div>
         </div>
+    </div>
+
+
         
     
 </body>

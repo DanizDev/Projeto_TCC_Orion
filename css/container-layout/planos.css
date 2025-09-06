@@ -1,14 +1,9 @@
-body {
-    margin: 0; 
-    min-height: 100vh; 
-    display: flex;
-    flex-direction: column;
-    background-image: linear-gradient(#062756, #0c70d3);
+#imgLogo{
+  width: 60px;
+  height: auto;
+  margin-left: 10px;
+  cursor: pointer;
 }
-
-
-
-
 /*background-color: rgb(19, 117, 237);
 /*#dcbaba*/
 .nav-links {
@@ -49,7 +44,6 @@ body {
 
 
 
-
 .cabecalho{
     display: flex;
     align-items: center;
@@ -57,7 +51,6 @@ body {
     background-image: linear-gradient(to right, #011C42, #084787);
     justify-content: space-between;
     height: 9vh;
-
 }
 
 .titulo{
@@ -102,13 +95,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: solid 2px #ffffff;
+    border: solid 2px #084787;
     border-radius: 10px;
-    background-image: linear-gradient(to right, #01122b 40%, #084787);
+    /*background-image: linear-gradient(to right, #01122b 40%, #084787)*/
+    background-color: #6fa7df;
     color: #0c70d3;
     padding: 60px;
     margin: 6% 10% 6% 10%; 
     font-size: 20px;
+    
 }
 .container-principal input{
     padding: 10px 50px 10px 50px;
@@ -116,28 +111,65 @@ body {
 }
 
 
-
+ul{
+  list-style-type: none;
+  padding-left: 0;
+}
+#medalha_ouro{
+  width: 60px;
+  height: 60px;
+}
+#medalha_prata{
+  width: 60px;
+  height: 60px;
+}
+#medalha_bronze{
+  width: 60px;
+  height: 60px;
+}
+#x{
+  float: inline-start;
+  margin-left: 0;
+  width: 30px;
+  height: 30px;
+}
+s{
+  color: rgb(80, 80, 80);
+}
 
 .planos{
   display: flex;
   text-align: center;
   justify-content: center;
-  gap: 40px;
+  gap: 10px;
+}
+h1{
+  padding-bottom: 70px;
 }
 
 
+.bronze h3{
+  color:#df7710;
+}
+
 .bronze{
-  border: solid 1px white;
-  margin: 10px 10px 10px 10px;
-  padding: 20% 10% 20% 10%;
+  border: solid 1px #062756;
+  margin: 2px 20px;
+  padding: 80px 20px;
   background-color: #062756;
   border-radius: 10px;
   cursor: pointer;
+  color: #ffffff;
 }
 .bronze:hover{
   background-color: #ac5600;
+  border: #ac5600 ;
   transition: 0.5s all;
   color: black;
+  h3{
+    color:#000000;
+    transition: all 1.2s;
+  }
 }
 .bronze input{
   border: solid 1px #084787;
@@ -146,28 +178,34 @@ body {
   cursor: pointer;
 }
 .bronze input:hover{
-  background-color: #062756;
+  background-image: linear-gradient(to right, #6c8ec0 40%, #3a75b1);
   transition: 0.5s all;
-  color: #0c70d3;
+  color: #000000;
   border-radius: 10px;
 }
 
 
-
-
+.prata h3{
+  color:#c4c4c4;
+}
 .prata{
-  border: solid 1px white;
-  margin: 10px;
-  padding: 20px;
-  padding: 20% 10% 20% 10%;
+  color: #ffffff;
+  border: solid 1px #062756;
+  margin: 2px 20px;
+  padding: 80px 20px;
   background-color: #062756;
   border-radius: 10px;
   cursor: pointer;
+
 }
 .prata:hover{
-  background-color:  #777474;
+  background-color:  #c4c4c4;
   transition: 0.5s all;
   color: black;
+  h3{
+    color: #000000;
+    transition: all 1.2s;
+  }
 }
 .prata input{
   border: solid 1px #084787;
@@ -176,28 +214,33 @@ body {
   cursor: pointer;
 }
 .prata input:hover{
-  background-color: #062756;
+  background-image: linear-gradient(to right, #6c8ec0 40%, #3a75b1);
   transition: 0.5s all;
-  color: #0c70d3;
+  color: #000000;
   border-radius: 10px;
 }
 
 
-
-
+.ouro h3{
+  color: #e7c504d8;
+}
 .ouro{
+  color: #ffffff;
   border: solid 1p;
-  margin: 10px;
-  padding: 20px;
-  padding: 20% 10% 20% 10%;
+  margin: 2px 20px;
+  padding: 80px 20px;
   background-color: #062756;
   border-radius: 10px;
   cursor: pointer;
 }
 .ouro:hover{
-  background-color: #ac9200d8;
+  background-color: #f5d106d8;
   transition: 0.5s all;
   color: black;
+  h3{
+    color: #000000;
+    transition: all 1.2s;
+  }
 }
 .ouro input{
   border: solid 1px #084787;
@@ -206,8 +249,8 @@ body {
   cursor: pointer;
 }
 .ouro input:hover{
-  background-color: #062756;
+  background-image: linear-gradient(to right, #6c8ec0 40%, #3a75b1);
   transition: 0.5s all;
-  color: #0c70d3;
+  color: #000000;
   border-radius: 10px;
 }
