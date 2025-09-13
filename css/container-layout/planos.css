@@ -42,52 +42,11 @@
   width: 100%;
 }
 
-
-
-.cabecalho{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    background-image: linear-gradient(to right, #011C42, #084787);
-    justify-content: space-between;
-    height: 9vh;
-}
-
-.titulo{
-    margin-left: 15px;
-    color: #e0cccc;
-    font-family: "Poppins", serif ;
-}
-
-.Logo{
-    display: flex;
-    align-items: flex-start;
-    gap: 300px; /* espaço entre imagem e texto */
-    margin-bottom: 30px;
-}
-
-.Logo img {
-    display: flex;
-    height: auto;
-    margin-top: 110px;
-    margin-left: 30px;
-}
-
-.Logo h1 {
-    display: flex;
-    margin-top: 130px;
-    color: #e0cccc;
-    font-size: 3.0rem;
-    font-family: "Poppins", serif ;
-    
-}
-
 .menu li a:hover{
     background-color: #AAD4FF;
     transition: 0.5s all;
     color: black;
 }
-
 
 
 
