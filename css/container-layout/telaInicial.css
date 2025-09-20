@@ -1,29 +1,33 @@
-body {
-    margin: 0; 
-    min-height: 100vh; 
-    display: flex;
-    flex-direction: column;
-    background-image: linear-gradient(#062756, #0c70d3);
-}
-
-
-.container-principal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .cabecalho{
     display: flex;
     align-items: center;
-    flex-direction: row;
+    flex-wrap: wrap;
     background-image: linear-gradient(to right, #011C42, #084787);
     justify-content: space-between;
-    height: 9vh;
-
+    height: auto;
+    padding: 0 20px;
 }
+
+.container-principal {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(#062756, #0c70d3);
+    font-family: 'Poppins', sans-serif;
+}
+
 .titulo{
-    margin-left: 15px;
+    font-size: 1.5 rem;
     color: #e0cccc;
     font-family: "Poppins", serif ;
 }
@@ -35,9 +39,9 @@ body {
     flex-direction: column;
     background-image: linear-gradient(to right, #0a182c, #074f97);
     width: 75%;
-    margin-top: 50px;
+    box-sizing: border-box;
     border-radius: 15px;
-    
+    padding: 20px;
 }
 .formulario h1, input, img{ 
     display: inline-block;
@@ -46,16 +50,16 @@ body {
 .Logo{
     display: flex;
     align-items: flex-start;
-    gap: 300px; /* espaço entre imagem e texto */
+    gap: 50px; /* espaço entre imagem e texto */
     margin-bottom: 30px;
+    flex-wrap: wrap;
 }
 
 
 .Logo img {
     display: flex;
     height: auto;
-    margin-top: 110px;
-    margin-left: 30px;
+    max-width: 400px;
 }
 
 .Logo h1 {
@@ -70,9 +74,10 @@ body {
 .contratar {
     display: flex;
     align-items: center;   
-    gap: 20px;            
-    margin-top: -90px;    
-    margin-left: 750px;   
+    flex-wrap: wrap;
+    gap: 20px;               
+    justify-content: flex-end; 
+    
 }
 
 .contratar input {
@@ -123,7 +128,7 @@ body {
   display: flex;
   gap: 55px;
   margin-right: 20px;
- 
+  flex-wrap: wrap;
 }
 
 .nav-links a {
@@ -153,3 +158,5 @@ body {
 .nav-links a:hover::after {
   width: 100%;
 }
+
+    
