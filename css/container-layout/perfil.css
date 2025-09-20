@@ -1,0 +1,171 @@
+#imgLogo {
+  width: 60px;
+  height: auto;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  gap: 55px;
+  margin-right: 20px;
+}
+
+.nav-links a {
+  color: #ffffff;
+  font-size: 24px;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 5px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background: #0c70d3;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #0c70d3;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.container-principal {
+  display: flexbox;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  /*background-image: linear-gradient(to right, #01122b 40%, #084787)*/
+  background-color: #9b9ea0ad;
+  color: #000000;
+  padding: 80px;
+  margin: 6% 10% 6% 10%;
+  font-size: 20px;
+}
+
+
+
+.usuario{
+  display: flex;
+  margin: 0 0 40px 0 ;
+  padding: 10px;
+}
+.usuario img {
+  height: 60px;
+  width: 60px;
+  padding: 0 10px;
+}
+
+
+.informacoes{
+  display: flex;
+}
+.informacoes img {
+  display: flex;
+  height: 40px;
+  width: 40px;
+}
+
+a{
+  display: flex;
+  padding: 0 10px;
+  margin: 10px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.feedback{
+  display: flex;
+  border: #ffffff solid 1px;
+  background-color: white;
+  padding: 0 5px;
+  margin: 20px;
+  margin-left: 40px;
+}
+.feedback img{
+  padding: 10px;
+}
+
+.dashboard{
+  display: flex;
+  border: #ffffff solid 1px;
+  background-color: #ffffff;
+  padding: 0 5px;
+  margin: 20px;
+}
+.dashbord img{
+  padding: 10px;
+}
+
+.suporte{
+  display: flex;
+  border: #ffffff solid 1px;
+  background-color: #ffffff;
+  padding: 0 5px;
+  margin: 20px;
+}
+.suporte img{
+  padding: 10px;
+}
+
+.continua{
+  display: flex;
+  margin-top: 20px;
+}
+.continua img {
+  display: flex;
+  height: 40px;
+  width: 40px;
+}
+
+.plano{
+  display: flex;
+  border: #ffffff solid 1px;
+  background-color: #ffffff;
+  padding: 0 5px;
+  margin: 20px;
+}
+.plano img{
+  padding: 10px;
+}
+
+.senha{
+  display: flex;
+  border: #ffffff solid 1px;
+  background-color: #ffffff;
+  padding: 0 5px;
+  margin: 20px;
+}
+.senha img{
+  padding: 10px;
+}
+
+
+
+
+.chat{
+  margin: 0 0 0 90%;
+}
+.chat button{
+  padding: 8px;
+  border-radius: 70px;
+  border: solid 5px white;
+  cursor: pointer;
+}
+.chat button:hover{
+  padding: 9px;
+}
+.chat img{
+  width: 50px;
+  height: 50px;
+}
