@@ -1,14 +1,20 @@
 #imgLogo img {
+  height: 9vh;
+  margin-left: 5%;
+}
+
+#imgLogo img {
   width: 60px;
   height: auto;
   cursor: pointer;
   margin-left: 10px;
 }
 
+
 .nav-links {  
   display: flex;
   gap: 40px;
-  margin-right: 180px;
+  margin-right: auto;
  
 }
 
@@ -41,7 +47,7 @@
 }
 
 .user{
-    margin-left: 1150px;
+    margin-left: auto;
     border-radius: 50%;
     display: flex;
     cursor: pointer;
@@ -112,7 +118,7 @@
   align-items: center;
   text-align: center;
   border-radius: 10px;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .containerPlano{
@@ -192,7 +198,7 @@ s{
   background-color: rgb(186, 183, 183);
   margin-top: 100px;
   width: 65%;
-  height: 650px;
+  height: 720px;
   border-radius: 10px;
   border: #000000 solid 2px;
 }
@@ -212,44 +218,71 @@ hr{
 }
 
 .info1 h3{
-  margin-right: 380px;
   margin-top: -65px;
   color: rgb(84, 82, 82);
+  display: flex;
+  margin-left: 25px;
 }
 .info2 h3{
-  margin-right: 420px;
   color: rgb(84, 82, 82);
+  display: flex;
+  margin-left: 25px;
 }
 .info3 h3{
-  margin-right: 300px;
   color: rgb(84, 82, 82);
+  display: flex;
+  margin-left: 25px;
 }
 .info4 h3{
-  margin-right: 390px;
   color: rgb(84, 82, 82);
+  display: flex;
+  margin-left: 25px;
 }
 .info5 h3{
-  margin-right: 280px;
   color: rgb(82, 84, 82);
+  display: flex;
+  margin-left: 25px;
 }
 
 .info1 h1{
-  margin-right: 220px;
   color: #2C9A1D;
+  display: flex;
+  margin-left: 25px;
 }
 .info2 h1{
-  margin-right: 400px;
   color: #2C9A1D;
+  display: flex;
+  margin-left: 25px;
 }
 .info3 h1{
-  margin-right: 205px;
   color: #2C9A1D;
+  display: flex;
+  margin-left: 25px;
 }
 .info4 h1{
-  margin-right: 330px;
   color: #2C9A1D;
+  display: flex;
+  margin-left: 25px;
 }
 .info5 h1{
-  margin-right: 310px;
+  display: flex;
   color: #2C9A1D;
+  margin-left: 25px;
+}
+
+.button {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: none;
+  background-color: #D9D9D9;
+  cursor: pointer;
+}
+
+#imgChatbot {
+  width: 40px;
+  height: auto;
 }
