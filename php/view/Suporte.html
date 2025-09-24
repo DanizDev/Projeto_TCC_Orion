@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feedback</title>
-    <link rel="stylesheet" type="text/css" href="../../css/container-layout/feedback.css">
+    <title>Suporte</title>
+    <link rel="stylesheet" type="text/css" href="../../css/container-layout/suporte.css">
     <link rel="stylesheet" type="text/css" href="../../css/componentes/CCB.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -14,61 +15,61 @@
     <header>
         <div class="cabecalho">
 
-            <a id="imgLogo" href="../view/Home.html">
-                <img alt="Logo" src="../../src/images/orion.png">
+            <!-- Logo com link -->
+            <a id="imgLogo" href="TelaPosLogin.html">
+                <img alt="Logo" src="../../src/images/orion.png" alt="Logo da IA">
             </a>
-
-
+            <!-- Itens de navegação -->
             <nav class="nav-links">
-
                 <a href="##">Sobre nós</a>
                 <a href="##">Assinatura</a>
                 <a href="##">Blog</a>
-
             </nav>
+
+            <!-- Imagem do usuário -->
             <div class="user" onclick="mostrarMenu()">
-
-                <i class="fas fa-user" alt="Foto do usuario"></i>
-
+                <i class="fas fa-user" alt="Foto do usuário"></i>
             </div>
 
-             <nav class="menu" id="menuSuspenso">
+            <!-- Navbar vertical -->
+            <nav class="menu" id="menuSuspenso">
                 <a href="#"><i class="fa-solid fa-pen"></i></a>
                 <a href="#"><i class="fa-solid fa-house"></i></a>
                 <a href="#"><i class="fa-solid fa-right-to-bracket"></i></a>
             </nav>
-        </div>
+
     </header>
 
-    <div class="container-principal">
+    <main class="container-principal">
         <form class="formulario">
-            <div class="feedback">
-                <img alt="Feedback" src="../../src/images/feedback.png">
+            <div class="suporte">
+                <img alt="Suporte" src="../../src/images/Icons/apoio-suporte.png">
 
-                <h1>Feedbacks</h1>
-                <h3>Deixe seu feedback sobre nosso site e sobre a IA</h3>
+                <h1>Suporte</h1>
+                <h3>Escreva sua mensagem aqui. Em breve nossa equipe entrará em contato</h3>
             </div>
 
             <div class="areaMSG">
                 <textarea style="resize: none" placeholder="Digite sua mensagem" cols="130" rows="20"></textarea>
             </div>
 
-           
+
 
             <div class="btn-enviar">
                 <input type="submit" name="" value="Enviar">
             </div>
         </form>
-    </div>
+    </main>
 
+    <!--chatbot-->
     <div class="chatbot">
         <button class="button">
-            <img id="imgChatbot" alt="chatbot" src="../../src/images/robos.png">
+            <img id="imgChatbot" src="../../src/images/robos.png" alt="Logo do chatbot">
         </button>
     </div>
 
     <script src="../../js/navbar.js"></script>
-
+    </div>
 </body>
 
 </html>
