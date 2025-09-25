@@ -6,7 +6,7 @@ CREATE TABLE Planos(
     Nome VARCHAR (255) NOT NULL,
     Valor DOUBLE NOT NULL,
     Descricao VARCHAR(255) NOT NULL,
-    Peridiocidade VARCHAR(255) NOT NULL
+    Periodiocidade VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE Pagamento(
