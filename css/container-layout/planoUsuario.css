@@ -7,15 +7,15 @@
   width: 60px;
   height: auto;
   cursor: pointer;
-  margin-left: 10px;
+  margin-left: 18%;
 }
 
 
-.nav-links {  
+.nav-links {
   display: flex;
-  gap: 40px;
-  margin-right: auto;
- 
+  gap: 2.5rem;
+  margin-left: 0.7%;
+  flex-wrap: wrap;
 }
 
 .nav-links a {
@@ -118,7 +118,7 @@
   align-items: center;
   text-align: center;
   border-radius: 10px;
-  margin-top: 50px;
+  margin-top: 2%;
 }
 
 .containerPlano{
@@ -156,13 +156,13 @@ s{
 
 .bronze{
   border: solid 1px #062756;
-  margin: 2px 20px;
-  padding: 80px 20px;
+  margin: 0.4% 2%;
+  padding: 6% 3%;
   background-color: #062756;
   border-radius: 10px;
   cursor: pointer;
   color: #ffffff;
-  margin-top: -80px;
+  margin-top: -2%;
 }
 
 .bronze:hover{
@@ -196,18 +196,17 @@ s{
 
 .containerInfo{
   background-color: rgb(186, 183, 183);
-  margin-top: 100px;
+  margin-top: 6%;
   width: 65%;
-  height: 720px;
+  height: 48%;
   border-radius: 10px;
   border: #000000 solid 2px;
 }
 
 .informacoes{
   background-color: rgb(186, 183, 183);
-  margin-top: 100px;
+  margin-top: 11%;
   width: 65%;
-  height: 600px;
   border-radius: 10px;
 }
 
@@ -218,56 +217,56 @@ hr{
 }
 
 .info1 h3{
-  margin-top: -65px;
+  margin-top: -12%;
   color: rgb(84, 82, 82);
   display: flex;
-  margin-left: 25px;
+  margin-left: 4%;
 }
 .info2 h3{
   color: rgb(84, 82, 82);
   display: flex;
-  margin-left: 25px;
+  margin-left: 4%;
 }
 .info3 h3{
   color: rgb(84, 82, 82);
   display: flex;
-  margin-left: 25px;
+  margin-left: 4%;
 }
 .info4 h3{
   color: rgb(84, 82, 82);
   display: flex;
-  margin-left: 25px;
+  margin-left: 4%;
 }
 .info5 h3{
   color: rgb(82, 84, 82);
   display: flex;
-  margin-left: 25px;
+  margin-left: 4%;
 }
 
 .info1 h1{
   color: #2C9A1D;
   display: flex;
-  margin-left: 25px;
+  margin-left: 4%;
 }
 .info2 h1{
   color: #2C9A1D;
   display: flex;
-  margin-left: 25px;
+  margin-left: 4%;
 }
 .info3 h1{
   color: #2C9A1D;
   display: flex;
-  margin-left: 25px;
+  margin-left: 4%;
 }
 .info4 h1{
   color: #2C9A1D;
   display: flex;
-  margin-left: 25px;
+  margin-left: 4%;
 }
 .info5 h1{
   display: flex;
   color: #2C9A1D;
-  margin-left: 25px;
+  margin-left: 4%;
 }
 
 .button {
