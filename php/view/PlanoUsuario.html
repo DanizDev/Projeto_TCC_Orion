@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plano Usuario</title>
+    <link rel="stylesheet" type="text/css" href="../../css/componentes/CCB.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/container-layout/planoUsuario.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="cabecalho">
+        <a id="imgLogo" href="../view/Home.html">
+          <img alt="Logo" src="../../src/images/orion.png"/>
+        </a>
+
+        <nav class="nav-links">
+          <a href="##">Sobre nós</a>
+          <a href="##">Assinatura</a>
+          <a href="##">Blog</a>
+        </nav>
+
+        <div class="user" onclick="mostrarMenu()">
+          <i class="fas fa-user" alt="Foto do usuário"></i>
+        </div>
+
+        <nav class="menu" id="menuSuspenso">
+          <a href="#"><i class="fa-solid fa-pen"></i></a>
+          <a href="#"><i class="fa-solid fa-house"></i></a>
+          <a href="#"><i class="fa-solid fa-right-to-bracket"></i></a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container-principal">
+      <div class="titulo">
+        <h1>Seu Plano</h1>
+      </div>
+      <div class="containerPlano">
+        <div class="bronze">
+          <h3>Plano Bronze</h3>
+          <img id="medalha_bronze" src="../../src/images/Icons/bronze.png" alt="">
+              <ul class="textoBronze">
+                    <li>Identificação de phishing em mesnagens</li>
+                    <br>
+                    <li>Alerta diario ao usuário sobre o risco</li>
+                    <br>
+                    <li><img id="x" src="../../src/images/Icons/x.png" alt="">
+                        <s>Bloqueio automatico de remetente malicioso</s>
+                    </li>
+                    <br>
+                    <li>
+                        <img id="x" src="../../src/images/Icons/x.png" alt="">
+                        <s>Envio de dados para o Dashboard</s>
+                    </li>
+              </ul>
+
+                <input type="submit" value="Contratar">
+        </div>
+
+        <div class="containerInfo">
+          <div class="informacoes">
+            <div class="info1">
+              <h3>Plano Ativo</h3>
+              <h1>Plano Trismestral</h1>
+              <hr>
+            </div>
+            
+           <div class="info2">
+              <h3>Valor</h3>
+              <h1>$$$</h1>
+              <hr>
+            </div>
+
+            <div class="info3">
+              <h3>E-mail para suporte</h3>
+              <h1>daniel@gmail.com</h1>
+              <hr>
+            </div>
+
+            <div class="info4">
+              <h3>Periodo</h3>
+              <h1>3 Meses</h1>
+              <hr>
+            </div>
+
+            <div class="info5">
+              <h3>Data de Encerramento</h3>
+              <h1>10/10/2010</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  
+   <div class="chatbot">
+        <button class="button">
+            <img id="imgChatbot" alt="chatbot" src="../../src/images/robos.png">
+        </button>
+    </div>
+    
+    <script src="../../js/navbar.js"></script>
+  </body>
+</html>
