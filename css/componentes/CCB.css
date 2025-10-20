@@ -11,14 +11,6 @@
     gap: 39px;
 }
 
-.container-principal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    width: 100%;
-    box-sizing: border-box;
-}
 
 body {
     margin: 0;
@@ -28,3 +20,4 @@ body {
     background-image: linear-gradient(#062756, #0c70d3);
     font-family: 'Poppins', sans-serif;
 }
+

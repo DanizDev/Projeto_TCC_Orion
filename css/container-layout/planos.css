@@ -56,13 +56,11 @@
     align-items: center;
     border: solid 2px #084787;
     border-radius: 10px;
-    /*background-image: linear-gradient(to right, #01122b 40%, #084787)*/
     background-color: #6fa7df;
     color: #0c70d3;
     padding: 60px;
     margin: 6% 10% 6% 10%; 
     font-size: 20px;
-    
 }
 .container-principal input{
     padding: 10px 50px 10px 50px;
@@ -119,30 +117,20 @@ h1{
   border-radius: 10px;
   cursor: pointer;
   color: #ffffff;
+  box-shadow: 3px 3px 10px 2px rgb(36, 69, 99);
+  flex-wrap: wrap;
 }
 .bronze:hover{
   background-color: #ac5600;
   border: #ac5600 ;
   transition: 0.5s all;
   color: black;
+  box-shadow: 3px 3px 10px 2px rgb(59, 59, 59);
   h3{
     color:#000000;
     transition: all 1.2s;
   }
 }
-.bronze input{
-  border: solid 1px #084787;
-  background-color: rgb(233, 226, 226);
-  border-radius: 8px;
-  cursor: pointer;
-}
-.bronze input:hover{
-  background-image: linear-gradient(to right, #6c8ec0 40%, #3a75b1);
-  transition: 0.5s all;
-  color: #000000;
-  border-radius: 10px;
-}
-
 
 .prata h3{
   color:#c4c4c4;
@@ -155,29 +143,20 @@ h1{
   background-color: #062756;
   border-radius: 10px;
   cursor: pointer;
-
+  box-shadow: 3px 3px 10px 2px rgb(36, 69, 99);
+  flex-wrap: wrap;
 }
 .prata:hover{
   background-color:  #c4c4c4;
   transition: 0.5s all;
   color: black;
+  box-shadow: 3px 3px 10px 2px rgb(59, 59, 59);
   h3{
     color: #000000;
     transition: all 1.2s;
   }
 }
-.prata input{
-  border: solid 1px #084787;
-  background-color: rgb(233, 226, 226);
-  border-radius: 8px;
-  cursor: pointer;
-}
-.prata input:hover{
-  background-image: linear-gradient(to right, #6c8ec0 40%, #3a75b1);
-  transition: 0.5s all;
-  color: #000000;
-  border-radius: 10px;
-}
+
 
 
 .ouro h3{
@@ -191,25 +170,125 @@ h1{
   background-color: #062756;
   border-radius: 10px;
   cursor: pointer;
+ box-shadow: 3px 3px 10px 2px rgb(36, 69, 99);
+ flex-wrap: wrap;
 }
 .ouro:hover{
   background-color: #f5d106d8;
   transition: 0.5s all;
   color: black;
+  box-shadow: 3px 3px 10px 2px rgb(59, 59, 59);
   h3{
     color: #000000;
     transition: all 1.2s;
   }
 }
-.ouro input{
-  border: solid 1px #084787;
-  background-color: rgb(233, 226, 226);
-  border-radius: 8px;
+
+
+.botao{
+  /* === BOTÃO CONTRATAR === */
+  display: inline-block;
+  background: linear-gradient(135deg, #1e88e5, #1565c0); /* azul moderno */
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 30px; /* bordas arredondadas */
   cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
 }
-.ouro input:hover{
-  background-image: linear-gradient(to right, #6c8ec0 40%, #3a75b1);
-  transition: 0.5s all;
-  color: #000000;
+
+/* Efeito ao passar o mouse */
+.botao:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #42a5f5, #1e88e5);
+}
+
+/* Efeito ao clicar */
+.botao:active {
+  transform: scale(0.97);
+}
+
+/* Responsivo para telas pequenas */
+@media (max-width: 768px) {
+  .btn-contratar {
+    font-size: 14px;
+    padding: 10px 24px;
+  }
+}
+
+
+
+/* ===== CONTAINER PRINCIPAL ===== */
+.container-principal {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(to bottom, #93c5fd, #1e3a8a);
+  min-height: 100vh;
+}
+
+.container-principal h1 {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+/* ===== ÁREA DOS PLANOS ===== */
+.planos {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap; /* permite quebrar linha */
+  gap: 30px; /* espaço entre os cards */
+}
+
+/* ===== ESTILO DOS CARDS ===== */
+.planos > div {
+  background-color: #0a5fd4;
+  color: #fff;
+  border-radius: solid 20px;
+  padding: 25px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.planos > div:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== ÍCONES E TEXTOS ===== */
+.planos img {
+  width: 60px;
+  margin: 10px 0;
+}
+
+.planos ul {
+  list-style: none;
+  padding: 0;
+}
+
+.planos li {
+  margin: 5px 0;
+}
+
+/* ===== BOTÃO ===== */
+.botao {
+  background-color: #2563eb;
+  border: none;
   border-radius: 10px;
+  padding: 10px 20px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.botao:hover {
+  background-color: #1d4ed8;
 }
