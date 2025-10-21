@@ -1,0 +1,23 @@
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 900px) {
+  .planos {
+    flex-direction: column; /* coloca um embaixo do outro */
+    align-items: center;
+  }
+
+  .planos > div {
+    width: 90%; /* ocupa quase toda a largura da tela */
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container-principal h1 {
+    font-size: 1.5rem;
+  }
+
+  .botao {
+    width:100%;
+}
+}
