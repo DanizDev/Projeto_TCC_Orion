@@ -3,12 +3,12 @@
 
     switch($requisicao){
         
-        case 'Cadastrar Usuario';
-            include '../controller/CadastrarUsuario.php';
+        case 'Cadastrar';
+            include 'CadastrarUsuario.php';
             break;
 
-        case 'Logar Usuario';
-            include '../controller/Login.php';
+        case 'Entrar';
+            include 'Login.php';
             break;
 
         default:

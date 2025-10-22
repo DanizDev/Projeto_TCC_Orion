@@ -84,7 +84,7 @@ body {
 }
 
 
-.contratar input {
+.contratar input[type="submit"] {
     display: flex;
     padding: 2% 5%;
     border-radius: 20px;
