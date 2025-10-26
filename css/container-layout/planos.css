@@ -1,3 +1,4 @@
+
 #imgLogo{
   width: 60px;
   height: auto;
@@ -6,48 +7,43 @@
 }
 /*background-color: rgb(19, 117, 237);
 /*#dcbaba*/
-.nav-links {
-  display: flex;
-  gap: 55px;
-  margin-right: 20px;
- 
-}
 
-.nav-links a {
-  color: #ffffff;
-  font-size: 24px;
-  text-decoration: none;
-  position: relative;
-  padding-bottom: 5px;
+
+  /* === BOTÃO CONTRATAR === */
+.botao{
+  display: inline-block;
+  background: linear-gradient(135deg, #1e88e5, #1565c0); /* azul moderno */
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 30px; /* bordas arredondadas */
   cursor: pointer;
-  transition: color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
 }
 
-.nav-links a::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  left: 0;
-  bottom: 0;
-  background: #0c70d3;
-  transition: width 0.3s ease;
+/* Efeito ao clicar */
+.botao:active {
+  transform: scale(0.97);
 }
 
-.nav-links a:hover {
-  color: #0c70d3;
+
+
+/* ===== CONTAINER PRINCIPAL ===== */
+.container-principal {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(to bottom, #93c5fd, #1e3a8a);
+  min-height: 50vh;
 }
 
-.nav-links a:hover::after {
-  width: 100%;
+.container-principal h1 {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 40px;
 }
-
-.menu li a:hover{
-    background-color: #AAD4FF;
-    transition: 0.5s all;
-    color: black;
-}
-
 
 
 .container-principal {
@@ -59,12 +55,23 @@
     background-color: #6fa7df;
     color: #0c70d3;
     padding: 60px;
-    margin: 6% 10% 6% 10%; 
+    margin: 6% ; 
     font-size: 20px;
+    width: 80%;
 }
 .container-principal input{
     padding: 10px 50px 10px 50px;
     margin: 20px;
+}
+
+
+/* ===== ÁREA DOS PLANOS ===== */
+.planos {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap; /* permite quebrar linha */
+  gap: 30px; /* espaço entre os cards */
 }
 
 
@@ -158,13 +165,12 @@ h1{
 }
 
 
-
 .ouro h3{
   color: #e7c504d8;
 }
 .ouro{
   color: #ffffff;
-  border: solid 1p;
+  border: solid 1px #062756;
   margin: 2px 20px;
   padding: 80px 20px;
   background-color: #062756;
@@ -182,67 +188,6 @@ h1{
     color: #000000;
     transition: all 1.2s;
   }
-}
-
-
-.botao{
-  /* === BOTÃO CONTRATAR === */
-  display: inline-block;
-  background: linear-gradient(135deg, #1e88e5, #1565c0); /* azul moderno */
-  color: white;
-  font-weight: 600;
-  font-size: 16px;
-  padding: 12px 28px;
-  border: none;
-  border-radius: 30px; /* bordas arredondadas */
-  cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-  transition: all 0.3s ease;
-}
-
-/* Efeito ao passar o mouse */
-.botao:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-  background: linear-gradient(135deg, #42a5f5, #1e88e5);
-}
-
-/* Efeito ao clicar */
-.botao:active {
-  transform: scale(0.97);
-}
-
-/* Responsivo para telas pequenas */
-@media (max-width: 768px) {
-  .btn-contratar {
-    font-size: 14px;
-    padding: 10px 24px;
-  }
-}
-
-
-
-/* ===== CONTAINER PRINCIPAL ===== */
-.container-principal {
-  text-align: center;
-  padding: 40px 20px;
-  background: linear-gradient(to bottom, #93c5fd, #1e3a8a);
-  min-height: 100vh;
-}
-
-.container-principal h1 {
-  color: #fff;
-  font-size: 2rem;
-  margin-bottom: 40px;
-}
-
-/* ===== ÁREA DOS PLANOS ===== */
-.planos {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap; /* permite quebrar linha */
-  gap: 30px; /* espaço entre os cards */
 }
 
 /* ===== ESTILO DOS CARDS ===== */
@@ -291,4 +236,10 @@ h1{
 
 .botao:hover {
   background-color: #1d4ed8;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #42a5f5, #1e88e5);
 }
+
+
+

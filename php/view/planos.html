@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../../css/container-layout/planos.css">
     <link rel="stylesheet" href="../../css/componentes/CCB.css">
     <link rel="stylesheet" href="../../css/componentes/fonts.css">
-    <link rel="stylesheet" href="../../css/componentes/responsivo.css">
+    <link rel="stylesheet" href="../../css/componentes/Reponsividade.css">
     <!-- Define o ícone (favicon) que aparece na aba do navegador -->
     <link rel="icon" href="../../src/images/orion.png" type="image/x-icon" />
     <title>Pagina de Planos</title>
@@ -17,17 +17,29 @@
 
     <header>
         <div class="cabecalho">
-            <img alt="Logo" id="imgLogo" src="../../src/images/orion.png">
-
+            <a href="../view/Home.html">
+                <img alt="Logo" id="imgLogo" src="../../src/images/orion.png">
+            </a>
 
             <nav class="nav-links">
-                <a href="##">Sobre nós</a>
-                <a href="##">Assinaturas</a>
+                <a href="##"> Sobre nós</a>
+                <a href="##"> Assinatura</a>
                 <a href="##">Blog</a>
             </nav>
 
+            <div class="user" onclick="mostrarMenu()">
+                <i class="fas fa-user" alt="Foto do usuário"></i>
+            </div>
+
+            <nav class="menu" id="menuSuspenso">
+                <a href="##"><i class="fa-solid fa-pen"></i></a>
+                <a href="##"><i class="fa-solid fa-house"></i></a>
+                <a href="##"><i class="fa-solid fa-right-to-bracket"></i></a>
+            </nav>
+           
         </div>
-    </header>
+    </header>>
+
     <div class="container-principal">
         <h1>Planos para assinaturas</h1>
         <div class="planos">
