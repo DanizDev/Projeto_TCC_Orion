@@ -28,6 +28,7 @@ body {
   margin-left: 40px;
   font-family: "Lexend", sans-serif;
   font-weight: 400;
+  flex-direction: column;
 }
 
 .nav-links a {

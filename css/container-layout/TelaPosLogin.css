@@ -181,8 +181,3 @@ body {
 
 /* RESPONSIVIDADE */
 /*Utilizar se quiser(deixa responsivo em qualquer tela.)*/
-@media (max-width: 768px) {
-  .conteudo-right{
-    
-  }
-}
