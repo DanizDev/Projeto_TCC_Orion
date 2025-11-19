@@ -8,7 +8,8 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela Inicial</title>
-    <link rel="stylesheet" type="text/css" href="../../css/container-layout/telaInicial.css">
+    <link rel="stylesheet" type="text/css" href="../../css/container-layout/Homepage.css">
+    <link rel="stylesheet" type="text/css" href="../../css/componentes/fontsLexa.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../../css/componentes/CCB.css">
     <link rel="stylesheet" type="text/css" href="../../css/componentes/usuario.css">
@@ -50,6 +51,12 @@ session_start();
             <div class="Logo">
                 <img src="../../src/images/orion.png" alt="Logo da IA">
                 <h1>Orion IA</h1>
+                <p> A Orion IA tem como propósito garantir a máxima proteção ao seu dispositivo e à integridade de seus dados sensíveis, por meio de Inteligência Artificial 
+                    voltada à detecção e prevenção de ameaças cibernéticas. 
+                    Nosso compromisso é oferecer soluções eficazes e seguras, 
+                    assegurando que cada usuário desfrute de um ambiente digital confiável e livre de riscos.
+                    Agradecemos pela confiança depositada em nossos serviços e reafirmamos nosso empenho contínuo em 
+                    aprimorar nossos sistemas para proteger você e suas informações com excelência.</p>
             </div>
 
 
