@@ -1,162 +1,162 @@
-.cabecalho{
+    .cabecalho{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        background-image: linear-gradient(to right, #011C42, #084787);
+        justify-content: space-between;
+        height: auto;
+        padding: 0 1%;
+    }
+
+    .container-principal {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        padding: 1%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-image: linear-gradient(#062756, #0c70d3);
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .titulo{
+        font-size: 1.5 rem;
+        color: #e0cccc;
+        font-family: "Poppins", serif ;
+    }
+
+    .formulario{
+        margin: 0 auto;
+        margin-top: 2%;
+        min-height: 80vh; 
+        display: flex;
+        flex-direction: column;
+        background-image: linear-gradient(to right, #0a182c, #074f97);
+        width: 75%;
+        box-sizing: border-box;
+        border-radius: 15px;
+        padding: 1%;
+    }
+    .formulario h1, input, img{ 
+        display: inline-block;
+    }
+
+    .Logo{
+        display: flex;
+        align-items: flex-start;
+        gap: 1.5rem; /* espaço entre imagem e texto */
+        margin-bottom: 9%;
+        flex-wrap: wrap;
+    }
+
+
+    .Logo img {
+        display: flex;
+        height: auto;
+        width: 40%;
+        margin: 0 8%;
+        max-width: 1000px;
+        margin-top: 8%;
+    }
+
+    .Logo h1 {
+        display: flex;
+        margin-top: 12%;
+        color: #e0cccc;
+        font-size: 3.0rem;
+        font-family: "Poppins", serif ;
+    }
+
+    .contratar {
+        display: flex;
+        align-items: center;   
+        flex-wrap: wrap;
+        gap: 1.1rem;  
+        margin-top: -15%;
+        margin-left: 54%;
+    }
+
+
+    .contratar input[type="submit"] {
+        display: flex;
+        padding: 2% 5%;
+        border-radius: 20px;
+        font-size: 20px;
+        font-family: "Poppins", sans-serif;
+        cursor: pointer;
+        border: none;
+        background-color:#e0cccc ;
+        flex-wrap: wrap;
+    }
+
+    .contratar a {
+        display: flex;
+        text-decoration: none;
+        font-size: 18px;
+        color: white;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .contratar input:hover{
+        background-color: #AAD4FF;
+        transition: 0.5s all;
+        color: #000;
+    }
+    .contratar a:hover{
+        transition: 0.5s all;
+        color: #dcbaba;
+    }
+
+
+
+
+    .menu li a:hover{
+        background-color: #AAD4FF;
+        transition: 0.5s all;
+        color: black;
+    }
+    /*background-color: rgb(19, 117, 237);
+    /*#dcbaba*/
+    .nav-links {
     display: flex;
-    align-items: center;
+    gap: 4.0rem;
+    margin-right: 1%;
     flex-wrap: wrap;
-    background-image: linear-gradient(to right, #011C42, #084787);
-    justify-content: space-between;
-    height: auto;
-    padding: 0 1%;
-}
+    }
 
-.container-principal {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    padding: 1%;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-image: linear-gradient(#062756, #0c70d3);
-    font-family: 'Poppins', sans-serif;
-}
-
-.titulo{
-    font-size: 1.5 rem;
-    color: #e0cccc;
-    font-family: "Poppins", serif ;
-}
-
-.formulario{
-    margin: 0 auto;
-    margin-top: 2%;
-    min-height: 80vh; 
-    display: flex;
-    flex-direction: column;
-    background-image: linear-gradient(to right, #0a182c, #074f97);
-    width: 75%;
-    box-sizing: border-box;
-    border-radius: 15px;
-    padding: 1%;
-}
-.formulario h1, input, img{ 
-    display: inline-block;
-}
-
-.Logo{
-    display: flex;
-    align-items: flex-start;
-    gap: 1.5rem; /* espaço entre imagem e texto */
-    margin-bottom: 9%;
-    flex-wrap: wrap;
-}
-
-
-.Logo img {
-    display: flex;
-    height: auto;
-    width: 40%;
-    margin: 0 8%;
-    max-width: 1000px;
-    margin-top: 8%;
-}
-
-.Logo h1 {
-    display: flex;
-    margin-top: 12%;
-    color: #e0cccc;
-    font-size: 3.0rem;
-    font-family: "Poppins", serif ;
-}
-
-.contratar {
-    display: flex;
-    align-items: center;   
-    flex-wrap: wrap;
-    gap: 1.1rem;  
-    margin-top: -15%;
-    margin-left: 54%;
-}
-
-
-.contratar input[type="submit"] {
-    display: flex;
-    padding: 2% 5%;
-    border-radius: 20px;
-    font-size: 20px;
-    font-family: "Poppins", sans-serif;
-    cursor: pointer;
-    border: none;
-    background-color:#e0cccc ;
-    flex-wrap: wrap;
-}
-
-.contratar a {
-    display: flex;
+    .nav-links a {
+    color: #ffffff;
+    font-size: 16px;
     text-decoration: none;
-    font-size: 18px;
-    color: white;
-    font-family: "Poppins", sans-serif;
-}
+    position: relative;
+    padding-bottom: 1%;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    }
 
-.contratar input:hover{
-    background-color: #AAD4FF;
-    transition: 0.5s all;
-     color: #000;
-}
-.contratar a:hover{
-    transition: 0.5s all;
-    color: #dcbaba;
-}
+    .nav-links a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 5%;
+    left: 0;
+    bottom: 0;
+    background: #0c70d3;
+    transition: width 0.3s ease;
+    }
+    .nav-links a:hover {
+    color: #0c70d3;
+    }
 
+    .nav-links a:hover::after {
+    width: 100%;
+    }
 
-
-
-.menu li a:hover{
-    background-color: #AAD4FF;
-    transition: 0.5s all;
-    color: black;
-}
-/*background-color: rgb(19, 117, 237);
-/*#dcbaba*/
-.nav-links {
-  display: flex;
-  gap: 4.0rem;
-  margin-right: 1%;
-  flex-wrap: wrap;
-}
-
-.nav-links a {
-  color: #ffffff;
-  font-size: 16px;
-  text-decoration: none;
-  position: relative;
-  padding-bottom: 1%;
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
-
-.nav-links a::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 5%;
-  left: 0;
-  bottom: 0;
-  background: #0c70d3;
-  transition: width 0.3s ease;
-}
-.nav-links a:hover {
-  color: #0c70d3;
-}
-
-.nav-links a:hover::after {
-  width: 100%;
-}
-
-    
+        
