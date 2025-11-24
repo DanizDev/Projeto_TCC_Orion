@@ -4,10 +4,19 @@
     $email = $_POST['emailUsuario'];
     $nome  = $_POST['nomeUsuario'];
     $senha = $_POST['senhaUsuario']; 
+    $confirmarSenha = $_POST['confirmarSenha'];
 
 
     
     if(!empty($email) && !empty($nome) && !empty($senha)){
+
+        if($senha !== $confirmarSenha){
+            echo"<script>
+            alert('As senhas se diferem')
+            </script>";
+
+            exit;
+        }
 
         $senhaHash = password_hash($senha, PASSWORD_DEFAULT);
 

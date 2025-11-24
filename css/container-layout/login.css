@@ -66,7 +66,7 @@ form {
   align-items: center;
 }
 
-button {
+button, input[type="submit"] {
   border-radius: 28px ;
   width: 215px;
   min-height: 30px;
@@ -99,7 +99,7 @@ input::placeholder {
 }
 
 /* Botão principal */
-form button {
+form button, input[type="submit"] {
   background-color: #0D47A1;
   color: white;
   display: flex;
@@ -135,7 +135,7 @@ form button {
 }
 
 /* Hover em todos os botões */
-button:hover {
+button:hover, input[type="submit"]:hover {
   transform: translateY(-2px);
   transition: all 0.3s;
 }

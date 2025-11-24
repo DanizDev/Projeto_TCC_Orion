@@ -19,17 +19,34 @@ $usuario = $requisicao -> fetch(PDO::FETCH_ASSOC);
 
 if($usuario && password_verify($senha, $usuario['SenhaHash'])){
 
-header ('Location: ../view/TelaPosLogin.html');
+    $_SESSION['usuario_id'] = $usuario['IdUsuario'];
+    $_SESSION['usuario_nome'] = $usuario['Nome'];
 
+        echo"<script> 
+        alert('Login feito com sucesso!!')
+        setTimeout(function() {
+
+        window.location.href = '../view/TelaPosLogin.html';
+        }, 50);
+        </script>" ;
+        exit;
+        
 }else{
-
-echo'Usuario ou senha incorretos';
-
+       echo "<script>
+            alert('Email ou senha incorretos!');
+            window.location.href = '../view/login.html';
+        </script>";
+        exit;
 }
 
+
 }else{
 
-echo'Preencha todos os campos';
+echo "<script>
+        alert('Preencha todos os campos!');
+        window.location.href = '../view/login.html';
+    </script>";
+    exit;
 
 }
 ?>

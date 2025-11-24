@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" type="text/css" href="../../css/container-layout/blog.css">
+    <link rel="stylesheet" type="text/css" href="../../css/componentes/CCB.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+
+            <!-- Logo com link -->
+            <a id="imgLogo" href="TelaPosLogin.html">
+                <img alt="Logo" src="../../src/images/orion.png" alt="Logo da IA">
+            </a>
+            <!-- Itens de navegação -->
+            <nav class="nav-links">
+                <a href="./TelaPosLogin.html">Sobre nós</a>
+                <a href="./planos.html">Assinatura</a>
+                <a href="./Blog.html">Blog</a>
+            </nav>
+
+            <!-- Imagem do usuário -->
+            <div class="user" onclick="mostrarMenu()">
+                <i class="fas fa-user" alt="Foto do usuário"></i>
+            </div>
+
+            <!-- Navbar vertical -->
+            <nav class="menu" id="menuSuspenso">
+                <a href="./perfil.html"><i class="fa-solid fa-pen"></i></a>
+                <a href="./Home.php"><i class="fa-solid fa-house"></i></a>
+                <a href="#"><i class="fa-solid fa-right-to-bracket"></i></a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- Bloco do Blog 1 -->
+        <section class="blog-section">
+            <h2>Blog</h2>
+
+            <!--  <article> é usada para marcar um conteúdo independente e completo dentro da página, ou seja, qualquer conteúdo que faça sentido por si só e que poderia até ser publicado em outro lugar -->
+            <article class="post destaque">
+                <img src="../../src/images/robo-blog1.jpeg" alt="Robô humanoide">
+                <div class="conteudo">
+                    <h3>iRonCub3: o primeiro robô humanoide com propulsão a jato</h3>
+                    <p>
+                        Pesquisadores do Instituto Italiano de Tecnologia (IIT) desenvolveram o iRonCub3,
+                        o primeiro robô humanoide com propulsão a jato, equipado com quatro motores a jato...
+                    </p>
+                </div>
+            </article>
+
+            <div class="miniaturas">
+                <img src="../../src/images/chatgpts-new-image-generator-is-delayed-for-free-users-this-v0-N9f1oFYzg5_WRUGsJ4ljWHEs38drpyeh0CAiTmpgVjM.webp" alt="Post relacionado">
+                <img src="##" alt="Post relacionado">
+                <img src="##" alt="Post relacionado">
+            </div>
+        </section>
+
+        <!-- Bloco do Blog 2 -->
+        <section class="blog-section2">
+
+            <div class="blog-grid">
+                <!-- Post com imagem à esquerda -->
+                <article class="post horizontal">
+                    <img src="##" alt="Robô humanoide">
+                    <div class="conteudo">
+                        <h3>iRonCub3: o primeiro robô humanoide com propulsão a jato</h3>
+                        <p>
+                            Pesquisadores do Instituto Italiano de Tecnologia (IIT) desenvolveram o iRonCub3...
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Lateral com cards -->
+                <aside class="sidebar">
+                    <div class="card">
+                        <img src="##" alt="Post relacionado">
+                        <p>dasdasgdh...</p>
+                    </div>
+                    <div class="card">
+                        <img src="##" alt="Post relacionado">
+                        <p>texto exemplo...</p>
+                    </div>
+                    <div class="card">
+                        <img src="##" alt="Post relacionado">
+                        <p>outro exemplo...</p>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+    </main>
+
+    <!--chatbot-->
+    <div class="chatbot">
+        <button class="button">
+            <img id="imgChatbot" src="../../src/images/robos.png" alt="Logo do chatbot">
+        </button>
+    </div>
+
+    <script src="../../js/navbar.js"></script>
+
+</body>
+
+</html>
