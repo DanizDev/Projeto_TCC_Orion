@@ -3,11 +3,13 @@ session_start();
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela Inicial</title>
-    <link rel="stylesheet" type="text/css" href="../../css/container-layout/telaInicial.css">
+    <link rel="stylesheet" type="text/css" href="../../css/container-layout/Homepage.css">
+    <link rel="stylesheet" type="text/css" href="../../css/componentes/fontsLexa.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../../css/componentes/CCB.css">
     <link rel="stylesheet" type="text/css" href="../../css/componentes/usuario.css">
@@ -23,17 +25,18 @@ session_start();
                 <h1> Orion IA</h1>
             </div>
 
-            
-                <?php if (isset($_SESSION['usuario_id']) && !empty($_SESSION['usuario_id'])): ?>
-                 <div class="user" onclick="mostrarMenu()">
-                     <i class="fas fa-user" alt="Foto do usuario"></i> 
-                 </div>   
+
+            <?php if (isset($_SESSION['usuario_id']) && !empty($_SESSION['usuario_id'])): ?>
+                <div class="user" onclick="mostrarMenu()">
+                    <i class="fas fa-user" alt="Foto do usuario"></i>
+                </div>
                 <nav class="menu" id="menuSuspenso">
                     <a href="./perfil.html"><i class="fa-solid fa-pen"></i></a>
-                    <a href="./Home.html"><i class="fa-solid fa-house"></i></a>
-                    <a href="../controller/Logout.php" name="requisicao" value="Logout"><i class="fa-solid fa-right-to-bracket"></i></a>
+                    <a href="./Home.php"><i class="fa-solid fa-house"></i></a>
+                    <a href="../controller/Logout.php" name="requisicao" value="Logout"><i
+                            class="fa-solid fa-right-to-bracket"></i></a>
                 </nav>
-                <?php else: ?>
+            <?php else: ?>
                 <nav class="nav-links">
                     <a href="./login.html">Login</a>
                     <a href="./login.html">Cadastre-se</a>
@@ -48,12 +51,31 @@ session_start();
             <div class="Logo">
                 <img src="../../src/images/orion.png" alt="Logo da IA">
                 <h1>Orion IA</h1>
+                <p> A Orion IA tem como propósito garantir a máxima proteção ao seu dispositivo e à integridade de seus dados sensíveis, por meio de Inteligência Artificial 
+                    voltada à detecção e prevenção de ameaças cibernéticas. 
+                    Nosso compromisso é oferecer soluções eficazes e seguras, 
+                    assegurando que cada usuário desfrute de um ambiente digital confiável e livre de riscos.
+                    Agradecemos pela confiança depositada em nossos serviços e reafirmamos nosso empenho contínuo em 
+                    aprimorar nossos sistemas para proteger você e suas informações com excelência.</p>
             </div>
 
 
             <div class="contratar">
-                <input type="submit" onclick="window.location.href='./login.html'"  value="Contratar Agora">
-                <a href="./login.html" class="saiba-mais">Saiba mais...</a>
+                <?php if (isset($_SESSION['usuario_id']) && !empty($_SESSION['usuario_id'])): ?>
+                    <!-- Usuário logado: vai pra outra página -->
+                    <input type="submit" onclick="window.location.href='./planos.html'" value="Contratar Agora">
+                <?php else: ?>
+                    <!-- Usuário não logado: vai pro login -->
+                    <input type="submit" onclick="window.location.href='./login.html'" value="Contratar Agora">
+                <?php endif; ?>
+
+                <?php if(isset($_SESSION['usuario_id']) && !empty($_SESSION['usuario_id'])): ?>
+                    <!-- Usuário logado: vai pra outra página -->
+                    <a href="./TelaPosLogin.html" class="saiba-mais">Saiba mais...</a>
+                <?php else: ?>
+                    <!-- Usuário não logado: vai pro login -->
+                    <a href="./login.html" class="saiba-mais">Saiba mais...</a>
+                <?php endif; ?>
             </div>
 
 
