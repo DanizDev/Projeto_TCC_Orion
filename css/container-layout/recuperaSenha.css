@@ -1,6 +1,3 @@
-.cabecalho{
-    padding: 2px 5px;
-}
 
 :root{
     --titulo: #0D47A1;
@@ -27,16 +24,13 @@
 
 /*Imagens*/
 #imgLogo{
-  width: 70px;
-  height: 9vh;
-  margin-left: 25px;
-  cursor: pointer;
+    width: 60px;
+    height: auto;
+    cursor: pointer;
+    margin-left: 18%;
 }
 
-#imgChatbot {
-  width: 30px;
-  height: auto;
-}
+
 
 /*Titulo de "Recuperação de Senha"*/
 h2 {
@@ -48,13 +42,11 @@ h2 {
 }
 
 /*Inputs & Button */
-
 form{
     display: flex;
     flex-direction: column;
     gap: 25px;
-    align-items: center;
-    
+    align-items: center;  
 }
 input, button{
     padding: 12px 12px;
@@ -89,4 +81,26 @@ input{
     border-radius: 12px;
     font-family: "Lexend", sans-serif;
     font-weight: 300;
+}
+
+@media (max-width: 768px) {
+
+
+  body {
+    width: 100%;
+  }
+
+  .cabecalho {  
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .nav-links {
+    margin: auto 0;
+  }
+
+  .imgLogo {
+    margin: 0;
+  }
 }

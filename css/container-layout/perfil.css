@@ -1,8 +1,8 @@
 #imgLogo {
-  width: 60px;
-  height: auto;
-  margin-left: 10px;
-  cursor: pointer;
+    width: 60px;
+    height: auto;
+    cursor: pointer;
+    margin-left: 18%;
 }
 
 .container-principal {
@@ -13,11 +13,10 @@
   border-radius: 10px;
   background-color: #6fa7df;
   color: #0c70d3;
-  padding: 60px;
+  padding: 5%;
   margin: 6% 10% 6% 10%;
   font-size: 20px;
 }
-
 
 
 .usuario {
@@ -55,12 +54,16 @@ a {
   border: #ffffff solid 1px;
   background-color: white;
   padding: 1%;
-  margin: 20px;
+  margin: 55px 15px;
   margin-left: 40px;
 }
 
 .feedback img {
-  padding: 10px;
+  padding: 20px 5px 0 5px;
+}
+
+.feedback p{
+  padding-top: 7px;
 }
 
 .feedback:hover {
@@ -75,11 +78,12 @@ a {
   border: #ffffff solid 1px;
   background-color: white;
   padding: 1%;
-  margin: 20px;
+  margin: 55px 15px;
+  padding-top: 15px;
 }
 
-.dashbord img {
-  padding: 10px 5px;
+.dashboard img{
+  padding: 10px 0;
 }
 
 .dashboard:hover {
@@ -94,12 +98,12 @@ a {
   border: #ffffff solid 1px;
   background-color: #ffffff;
   padding: 1%;
-  margin: 20px;
+  margin: 55px 15px;
   padding-right: 14px;
 }
 
 .suporte img {
-  padding: 10px;
+  padding: 15px 10px ;
 }
 
 .suporte:hover {
@@ -124,7 +128,7 @@ a {
 .plano {
   border: #ffffff solid 1px;
   background-color: #ffffff;
-  padding: 0 5px;
+  padding: 10px;
   margin: 20px;
 }
 
@@ -143,7 +147,7 @@ a {
 .senha {
   border: #ffffff solid 1px;
   background-color: #ffffff;
-  padding: 0 5px;
+  padding: 10px;
   margin: 20px;
 }
 
@@ -188,7 +192,7 @@ a {
 
 
   body {
-    width: 80%;
+    width: 100%;
   }
 
   .cabecalho {
@@ -214,26 +218,28 @@ a {
   .continua {
     flex-wrap: wrap;
     justify-content: center;
-    width: 80%;
+    margin-bottom: auto;
+    margin-top: 30px;
   }
 
   .feedback {
-    padding: 0;
+    padding: 0 6px;
     margin: 0;
   }
 
   .dashboard {
-    padding: 0 5px;
+    padding: 0 4px;
+    margin-bottom: auto;
   }
 
   .suporte {
-    padding: 0 10px;
-    margin: 0;
+    padding: 0 12px;
+    margin-bottom: auto;
   }
 
   .plano {
-    padding: 0 15px;
-    margin: 0;
+    padding: 0 18px;
+    margin-bottom: 30px;
   }
 
   .senha {
