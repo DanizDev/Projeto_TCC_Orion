@@ -1,3 +1,4 @@
+<<<<<<< HEAD:css/container-layout/telaInicial.css
     .cabecalho{
         display: flex;
         align-items: center;
@@ -125,12 +126,18 @@
     /*background-color: rgb(19, 117, 237);
     /*#dcbaba*/
     .nav-links {
+=======
+/*Deixando guardado aqui o css da telaInicial.css, por precaução */
+
+.cabecalho{
+>>>>>>> 21c019922dc82db9c0151bbacccc322945af33cb:salvandoalterações
     display: flex;
     gap: 4.0rem;
     margin-right: 1%;
     flex-wrap: wrap;
     }
 
+<<<<<<< HEAD:css/container-layout/telaInicial.css
     .nav-links a {
     color: #ffffff;
     font-size: 16px;
@@ -154,9 +161,170 @@
     .nav-links a:hover {
     color: #0c70d3;
     }
+=======
+.container-principal {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 1%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(#062756, #0c70d3);
+    font-family: 'Lexend', sans-serif;
+    font-weight: 300;
+}
+
+.titulo{
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-family: "Lexend", sans-serif ;
+    font-weight: 200;
+}
+
+.formulario{
+    margin: 0 auto;
+    margin-top: 2%;
+    min-height: 80vh; 
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right, #0a182c, #074f97);
+    width: 75%;
+    box-sizing: border-box;
+    border-radius: 15px;
+    padding: 1%;
+}
+.formulario h1, input, img{ 
+    display: inline-block;
+}
+
+.Logo{
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem; /* espaço entre imagem e texto */
+    margin-bottom: 9%;
+    flex-wrap: wrap;
+}
+
+
+.Logo img {
+    display: flex;
+    height: auto;
+    width: 40%;
+    margin: 0 8%;
+    max-width: 1000px;
+    margin-top: 8%;
+}
+
+.Logo h1 {
+    display: flex;
+    margin-top: 12%;
+    color: #e0cccc;
+    font-size: 3.0rem;
+    font-family: "Lexend", sans-serif ;
+    font-weight: 300;
+}
+
+.contratar {
+    display: flex;
+    align-items: center;   
+    flex-wrap: wrap;
+    gap: 1.1rem;  
+    margin-top: -15%;
+    margin-left: 54%;
+}
+
+
+.contratar input[type="submit"] {
+    display: flex;
+    padding: 2% 5%;
+    border-radius: 20px;
+    font-size: 16px;
+    font-family: "Lexend", sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+    border: none;
+    background-color:#ffffff ;
+    flex-wrap: wrap;
+}
+
+.contratar a {
+    display: flex;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    font-family: "Lexend", sans-serif;
+}
+
+.contratar input:hover{
+    background-color: #b9ccdf;
+    transform: translateY(-2px);
+    transition: all 0.3s;
+    color: #000;
+}
+.contratar a:hover{
+    transition: 0.5s all;
+    color: #ffffff;
+}
+>>>>>>> 21c019922dc82db9c0151bbacccc322945af33cb:salvandoalterações
 
     .nav-links a:hover::after {
     width: 100%;
     }
 
+<<<<<<< HEAD:css/container-layout/telaInicial.css
         
+=======
+
+
+.menu li a:hover{
+    background-color: #AAD4FF;
+    transition: 0.5s all;
+    color: black;
+}
+
+/*background-color: rgb(19, 117, 237);
+/*#dcbaba*/
+.nav-links {
+  display: flex;
+  gap: 4.0rem;
+  margin-right: 1%;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 1%;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 5%;
+  left: 0;
+  bottom: 0;
+  background: #0c70d3;
+  transition: width 0.3s ease;
+}
+.nav-links a:hover {
+  color: #0c70d3;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+    
+>>>>>>> 21c019922dc82db9c0151bbacccc322945af33cb:salvandoalterações
