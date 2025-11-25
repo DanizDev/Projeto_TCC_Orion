@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../../css/componentes/CCB.css">
-    <link rel="stylesheet" type="text/css" href="../../css/componentes/responsivo.css">
+    <link rel="stylesheet" href="../../css/componentes/CCB.css">
+    <link rel="stylesheet" type="text/css" href="../../css/componentes/Reponsividade.css">
     <link rel="stylesheet" type="text/css" href="../../css/container-layout/perfil.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <!-- Define o ícone (favicon) que aparece na aba do navegador -->
     <link rel="icon" href="../../src/images/orion.png" type="image/x-icon" />
     <title>Tela de perfil</title>
@@ -15,13 +16,26 @@
 <body>
     <header>
         <div class="cabecalho">
-            <img alt="Logo" id="imgLogo" src="../../src/images/orion.png">
+            <a href="../view/Home.html">
+                <img alt="Logo" id="imgLogo" src="../../src/images/orion.png">
+            </a>
 
             <nav class="nav-links">
-                <a href="TelaPosLogin.html">Sobre nós</a>
-                <a href="planos.html">Assinaturas</a>
-                <a href="Blog.html">Blog</a>
+                <a href="../../php/view/TelaPosLogin.html">Sobre nós</a>
+                <a href="../../php/view/planos.html">Assinaturas</a>
+                <a href="../../php/view/Blog.html">Blog</a>
             </nav>
+
+            <div class="user" onclick="mostrarMenu()">
+                <i class="fas fa-user" alt="Foto do usuário"></i>
+            </div>
+
+            <nav class="menu" id="menuSuspenso">
+                <a href="##"><i class="fa-solid fa-pen"></i></a>
+                <a href="##"><i class="fa-solid fa-house"></i></a>
+                <a href="##"><i class="fa-solid fa-right-to-bracket"></i></a>
+            </nav>
+           
         </div>
     </header>
 
@@ -50,7 +64,11 @@
             </div>
 
             <div class="suporte">
+
+                <a href="../../php/view/Suporte.html">
+
                 <a href="./Suporte.html">
+
                     <img src="../../src/images/Icons/apoio-suporte.png" alt="">
                     <p>suporte</p>
                 </a>
@@ -60,7 +78,7 @@
             <div class="continua">
 
             <div class="plano">
-                <a href="../../php/view/planos.html">
+                <a href="../../php/view/PlanoUsuario.html">
                     <img src="../../src/images/Icons/moeda-de-dinheiro.png" alt="">
                     <p>Planos</p>
                 </a>

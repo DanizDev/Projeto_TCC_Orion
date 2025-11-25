@@ -1,137 +1,100 @@
-#imgLogo{
+#imgLogo {
   width: 60px;
   height: auto;
   margin-left: 10px;
   cursor: pointer;
 }
 
+body{
+ width: 100%;
+ height: 100%;
+}
 
 /*background-color: rgb(19, 117, 237);
 /*#dcbaba*/
-.nav-links {
-  display: flex;
-  gap: 55px;
-  margin-right: 20px;
- 
-}
-
-.nav-links a {
-  color: #ffffff;
-  font-size: 24px;
-  text-decoration: none;
-  position: relative;
-  padding-bottom: 5px;
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
-
-.nav-links a::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  left: 0;
-  bottom: 0;
-  background: #0c70d3;
-  transition: width 0.3s ease;
-}
-
-.nav-links a:hover {
-  color: #0c70d3;
-}
-
-.nav-links a:hover::after {
-  width: 100%;
-}
-
-
-
-#senha{
-  text-align: center;
-}
-
-
-.cabecalho{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    background-image: linear-gradient(to right, #011C42, #084787);
-    justify-content: space-between;
-    height: 9vh;
-}
-
-.titulo{
-    margin-left: 15px;
-    color: #e0cccc;
-    font-family: "Poppins", serif ;
-}
-
-.Logo{
-    display: flex;
-    align-items: flex-start;
-    gap: 300px; /* espaço entre imagem e texto */
-    margin-bottom: 30px;
-}
-
-.Logo img {
-    display: flex;
-    height: auto;
-    margin-top: 110px;
-    margin-left: 30px;
-}
-
-.Logo h1 {
-    display: flex;
-    margin-top: 130px;
-    color: #e0cccc;
-    font-size: 3.0rem;
-    font-family: "Poppins", serif ;
-    
-}
-
-.menu li a:hover{
-    background-color: #AAD4FF;
-    transition: 0.5s all;
-    color: black;
-}
-
-
-
 
 .container-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 2px #ffffff;
+  border-radius: 10px;
+  background-color: #ffffff;
+  font-size: 20px;
+  background-color: azure;
+  margin: 10% 20%;
+  padding: 5% ;
+}
+
+
+/*Titulo de "Recuperação de Senha"*/
+h2 {
+    font-size: 32px;
+    font-family: "Lexend", sans-serif;
+    font-weight: 400;
+    color: #0D47A1;
+    text-align: center;
+}
+
+/*Inputs & Button */
+
+form{
     display: flex;
     flex-direction: column;
+    gap: 25px;
     align-items: center;
-    border: solid 2px #ffffff;
-    border-radius: 10px;
-    background-color: #ffffff;
-    color: #0c70d3;
-    padding: 60px;
-    margin: 13% 35% 0 35%;
-    font-size: 20px;
-    background-color: azure; 
+    
 }
-.container-principal input{
-    padding: 10px 50px 10px 50px;
-    margin: 20px;
+input, button{
+    padding: 12px 12px;
+    border: none;
+    outline: none;
+    font-family: "Lexend", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #ffff;
 }
-
-
-
-
-.contratar input{
-    border: solid 1px #084787;
-    background-color: rgb(233, 226, 226);
-    border-radius: 8px;
+button{
+    border-radius: 28px;
+    width: 170px;
+    min-height: 40px;
+    background-color: #0D47A1;
+    align-content: center;
     cursor: pointer;
-}
-
-.contratar input:hover{
-    background-color: #062756;
-    transition: 0.5s all;
-    color: #0c70d3;
     border-radius: 10px;
 }
+input{
+    width: 315px;
+    height: 40px;
+    color: #ffff;
+    border-radius: 9px;
+    background-color: #D9D9D9;
+}
+
+.salvar:hover{
+    background-color: #57a3f0;
+    transition: 0.5s all;
+    color: rgb(255, 255, 255);
+    border-radius: 12px;
+    font-family: "Lexend", sans-serif;
+    font-weight: 300;
+}
+
+#imgChatbot {
+  width: 30px;
+  height: auto;
+}
 
 
 
+/* RESPONSIVIDADE */
+/*Utilizar se quiser(deixa responsivo em qualquer tela.)*/
+@media (max-width: 768px) {
+  input, button{
+    width: 100%;
+  }
+
+  input::placeholder{
+    color: #D9D9D9;
+  }
+}
