@@ -55,9 +55,10 @@ body {
 .Logo{
     display: flex;
     align-items: flex-start;
-    gap: 1.5rem; /* espaço entre imagem e texto */
+    gap: 2rem; /* espaço entre imagem e texto */
     margin-bottom: 9%;
     flex-wrap: wrap;
+    text-align: left;
 }
 
 
@@ -72,7 +73,7 @@ body {
 
 .Logo h1{
     display: flex;
-    margin-top: 12%;
+    margin-top: 8%;
     color: #ffffff;
     font-size: 3.0rem;
     font-family: "Lexend", sans-serif ;
@@ -91,10 +92,15 @@ body {
 p{
     font-family: "Lexend", sans-serif;
     font-weight: 300;
-    margin-top: -30%;
+    margin-top: -37%;
     margin-left: 48%;    
     color: #fff;
+    line-height: 1.4;
+    max-width: 500px;
+    
 }
+
+
 
 .contratar input[type="submit"] {
     display: flex;

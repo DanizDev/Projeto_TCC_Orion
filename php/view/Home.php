@@ -51,13 +51,14 @@ session_start();
             <div class="Logo">
                 <img src="../../src/images/orion.png" alt="Logo da IA">
                 <h1>Orion IA</h1>
-                <p> A Orion IA tem como propósito garantir a máxima proteção ao seu dispositivo <br>e à integridade 
-                    de seus dados sensíveis, por meio de Inteligência Artificial 
-                    voltada à <br>detecção e prevenção de ameaças cibernéticas. 
-                    Nosso compromisso é oferecer <br>soluções eficazes e seguras, 
-                    assegurando que cada usuário desfrute de um <br>ambiente digital confiável e livre de riscos.
-                    Agradecemos pela confiança <br> depositada em nossos serviços e reafirmamos nosso empenho contínuo em 
-                    <br>aprimorar nossos sistemas para proteger você e suas informações com excelência.</p>
+                <p style="display: block; text-align: justify; ">
+    A Orion IA tem como propósito garantir a máxima proteção ao seu dispositivo e à integridade 
+    de seus dados sensíveis, por meio de Inteligência Artificial voltada à detecção e prevenção 
+    de ameaças cibernéticas. Nosso compromisso é oferecer soluções eficazes e seguras, assegurando 
+    que cada usuário desfrute de um ambiente digital confiável e livre de riscos. Agradecemos pela 
+    confiança depositada em nossos serviços e reafirmamos nosso empenho contínuo em aprimorar nossos 
+    sistemas para proteger você e suas informações com excelência.
+</p>
             </div>
 
 

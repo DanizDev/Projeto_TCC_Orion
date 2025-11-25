@@ -5,7 +5,7 @@
 
 .user{
     margin-left: auto;
-    margin-right: 30px;
+    margin-right: 2.5%;
     border-radius: 50%;
     display: flex;
     cursor: pointer;
@@ -28,17 +28,17 @@
 /* Formulário principal */
 .formulario{
     margin: 0 auto;
-    min-height: 70vh; 
+    height: 108vh; 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
     background-image: linear-gradient(to right,#b0b9c2, #93bae1);
-    width: 75%;
+    width: 76%;
     margin-top: 40px;
     border-radius: 15px;
     max-width: 1000px;
-    padding: 20px;
+    padding: 4px;
+ 
 }
 
 /* Cabeçalho do suporte */
@@ -53,12 +53,14 @@
 .suporte img {
     width: 40px;  /* Ícone menor */
     height: auto;
+    margin-top: 4%;
 }
 
 .suporte h1 {
     font-size: 18px;
     margin: 0;
     font-weight: bold;
+    margin-top: 4%;
 }
 
 .suporte h3 {
@@ -66,25 +68,26 @@
     margin: 0;
     font-weight: normal;
     color: #333;
+    margin-top: 4%;
 }
 
 /* Caixa de mensagem */
 .areaMSG{
     display: flex;
     justify-content: center;
-    margin-top: 10px;
     width: 100%;
 }
 
 .areaMSG textarea{
     width: 90%;
     height: 450px;
-    padding: 10px;
+    padding: 1%;
     font-size: 14px;
     font-family: "Poppins", sans-serif;
     border-radius: 5px;
     border: 1px solid #ccc;
     resize: none;
+    border: 2px solid #000000;
 }
 
 /* Botão enviar */
@@ -99,7 +102,7 @@
     background-color: #004aad;
     color: #fff;
     border: none;
-    padding: 10px 40px;
+    padding: 10px 50px;
     border-radius: 20px;
     font-size: 15px;
     cursor: pointer;
@@ -159,7 +162,7 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 110px;
+    top: 70px;
     right: 40px;
     background-color: #d0d2f7;
     padding: 5px;
