@@ -6,7 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../../css/container-layout/mudarSenha.css">
+    <link rel="stylesheet" type="text/css" href="../../css/componentes/fontsLexa.css">
     <link rel="stylesheet" type="text/css" href="../../css/componentes/CCB.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <!-- Define o ícone (favicon) que aparece na aba do navegador -->
     <link rel="icon" href="../../src/images/orion.png" type="image/x-icon" />
     <title>Tela mudar senha</title>
@@ -15,30 +17,52 @@
 
 <body>
     <header>
-    <div class="cabecalho">
-        <img alt="Logo" id="imgLogo" src="../../src/images/orion.png">
+        <div class="cabecalho">
+            <a href="../view/Home.html">
+                <img alt="Logo" id="imgLogo" src="../../src/images/orion.png">
+            </a>
 
-            
             <nav class="nav-links">
-                <a href="TelaPosLogin.html">Sobre nós</a>
-                <a href="planos.html">Assinaturas</a>
-                <a href="Blog.html">Blog</a>
+                <a href="../../php/view/TelaPosLogin.html">Sobre nós</a>
+                <a href="../../php/view/planos.html">Assinatura</a>
+                <a href="../../php/view/Blog.html">Blog</a>
             </nav>
-           
-            </div>
-        </header>
 
-    <div class="container-principal">
-
-        <p>Informe o seu email para recuperar a <id="senha">senha</id></p>
-
-        <input type="text">
-
-        <div class="contratar">
-                <input id="botao" type="submit" name="" value="Cadastrar">
-                <a href="##"></a>
+            <div class="user" onclick="mostrarMenu()">
+                <i class="fas fa-user" alt="Foto do usuário"></i>
             </div>
 
-    </div>
+            <nav class="menu" id="menuSuspenso">
+                <a href="##"><i class="fa-solid fa-pen"></i></a>
+                <a href="##"><i class="fa-solid fa-house"></i></a>
+                <a href="##"><i class="fa-solid fa-right-to-bracket"></i></a>
+            </nav>
+
+        </div>
+
+        <div class="container-principal">
+
+            <div class="tituloRS">
+                <h2>Mudar de Senha</h2>
+            </div>
+            <form>
+                <input type="password" placeholder="Informe a sua nova senha">
+
+                <div class="botao">
+                    <button type="submit" class="salvar">Salvar</button>
+                    <a href="./Login.html"></a>
+                </div>
+            </form>
+        </div>
+
+
+        <!--chatbot-->
+        <div class="chatbot">
+            <button class="buttonChat">
+                <img id="imgChatbot" src="../../src/images/robos.png" alt="Logo do chatbot">
+            </button>
+        </div>
+        </div>
 </body>
+
 </html>
