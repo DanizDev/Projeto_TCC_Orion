@@ -3,7 +3,6 @@
         margin-left: 10px;
     }
 
-<<<<<<< HEAD
 .user{
     margin-left: auto;
     margin-right: 2.5%;
@@ -21,31 +20,11 @@
     justify-content: center;
     margin-right: 30px;
 }
-=======
-    .user{
-        margin-left: auto;
-        margin-right: 30px;
-        border-radius: 50%;
-        display: flex;
-        cursor: pointer;
-        position: relative;
-        border: 2px solid #fff;
-        background-color: #fff;
-        color: #292929;
-        font-size: 30px;
-        width: 45px;
-        height: 45px;
-        align-items: center;
-        justify-content: center;
-        margin-right: 30px;
-    }
->>>>>>> 69a1d1722d5ab204961cb956c6f4b8f80504d48d
 
     .user:hover{
         transform: scale(1.1);
     }
 
-<<<<<<< HEAD
 /* Formulário principal */
 .formulario{
     margin: 0 auto;
@@ -61,23 +40,6 @@
     padding: 4px;
  
 }
-=======
-    /* Formulário principal */
-    .formulario{
-        margin: 0 auto;
-        min-height: 70vh; 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        background-image: linear-gradient(to right,#b0b9c2, #93bae1);
-        width: 75%;
-        margin-top: 40px;
-        border-radius: 15px;
-        max-width: 1000px;
-        padding: 20px;
-    }
->>>>>>> 69a1d1722d5ab204961cb956c6f4b8f80504d48d
 
     /* Cabeçalho do suporte */
     .suporte {
@@ -88,7 +50,6 @@
         text-align: left;
     }
 
-<<<<<<< HEAD
 .suporte img {
     width: 40px;  /* Ícone menor */
     height: auto;
@@ -128,44 +89,6 @@
     resize: none;
     border: 2px solid #000000;
 }
-=======
-    .suporte img {
-        width: 40px;  /* Ícone menor */
-        height: auto;
-    }
-
-    .suporte h1 {
-        font-size: 18px;
-        margin: 0;
-        font-weight: bold;
-    }
-
-    .suporte h3 {
-        font-size: 14px;
-        margin: 0;
-        font-weight: normal;
-        color: #333;
-    }
-
-    /* Caixa de mensagem */
-    .areaMSG{
-        display: flex;
-        justify-content: center;
-        margin-top: 10px;
-        width: 100%;
-    }
-
-    .areaMSG textarea{
-        width: 90%;
-        height: 450px;
-        padding: 10px;
-        font-size: 14px;
-        font-family: "Poppins", sans-serif;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-        resize: none;
-    }
->>>>>>> 69a1d1722d5ab204961cb956c6f4b8f80504d48d
 
     /* Botão enviar */
     .btn-enviar {
@@ -175,7 +98,6 @@
         width: 100%;
     }
 
-<<<<<<< HEAD
 .btn-enviar input {
     background-color: #004aad;
     color: #fff;
@@ -186,24 +108,11 @@
     cursor: pointer;
     transition: background 0.3s ease;
 }
-=======
-    .btn-enviar input {
-        background-color: #004aad;
-        color: #fff;
-        border: none;
-        padding: 10px 40px;
-        border-radius: 20px;
-        font-size: 15px;
-        cursor: pointer;
-        transition: background 0.3s ease;
-    }
->>>>>>> 69a1d1722d5ab204961cb956c6f4b8f80504d48d
 
     .btn-enviar input:hover {
         background-color: #003080;
     }
 
-<<<<<<< HEAD
 /* Logo */
 #imgLogo img {
     width: 60px;
@@ -307,12 +216,3 @@
     width: 40px;
     height: auto;
 }
-=======
-    /* Logo */
-    #imgLogo img {
-        width: 60px;
-        height: auto;
-        cursor: pointer;
-        margin-left: 10px;
-    }
->>>>>>> 69a1d1722d5ab204961cb956c6f4b8f80504d48d
