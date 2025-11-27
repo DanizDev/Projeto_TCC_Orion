@@ -1,11 +1,23 @@
-    .Logo img{
-        height: 9vh;
-        margin-left: 10px;
-    }
+.Logo img{
+    height: 9vh;
+    margin-left: 10px;
+}
+
+.menu li{
+    display: inline-block;
+    margin: 30px;
+    font-size: 22px;
+    color: #e0cccc;
+}
+
+.menu a{
+    color: #e0cccc;
+    text-decoration: none;
+}
 
 .user{
     margin-left: auto;
-    margin-right: 2.5%;
+    margin-right: 30px;
     border-radius: 50%;
     display: flex;
     cursor: pointer;
@@ -21,46 +33,44 @@
     margin-right: 30px;
 }
 
-    .user:hover{
-        transform: scale(1.1);
-    }
+.user:hover{
+    transform: scale(1.1);
+}
 
 /* Formulário principal */
 .formulario{
     margin: 0 auto;
-    height: 108vh; 
+    min-height: 70vh; 
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
     background-image: linear-gradient(to right,#b0b9c2, #93bae1);
-    width: 76%;
+    width: 75%;
     margin-top: 40px;
     border-radius: 15px;
     max-width: 1000px;
-    padding: 4px;
- 
+    padding: 20px;
 }
 
-    /* Cabeçalho do suporte */
-    .suporte {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        margin: 20px;
-        text-align: left;
-    }
+/* Cabeçalho do suporte */
+.suporte {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px;
+    text-align: left;
+}
 
 .suporte img {
     width: 40px;  /* Ícone menor */
     height: auto;
-    margin-top: 4%;
 }
 
 .suporte h1 {
     font-size: 18px;
     margin: 0;
     font-weight: bold;
-    margin-top: 4%;
 }
 
 .suporte h3 {
@@ -68,50 +78,49 @@
     margin: 0;
     font-weight: normal;
     color: #333;
-    margin-top: 4%;
 }
 
 /* Caixa de mensagem */
 .areaMSG{
     display: flex;
     justify-content: center;
+    margin-top: 10px;
     width: 100%;
 }
 
 .areaMSG textarea{
     width: 90%;
     height: 450px;
-    padding: 1%;
+    padding: 10px;
     font-size: 14px;
     font-family: "Poppins", sans-serif;
     border-radius: 5px;
     border: 1px solid #ccc;
     resize: none;
-    border: 2px solid #000000;
 }
 
-    /* Botão enviar */
-    .btn-enviar {
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-        width: 100%;
-    }
+/* Botão enviar */
+.btn-enviar {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
 
 .btn-enviar input {
     background-color: #004aad;
     color: #fff;
     border: none;
-    padding: 10px 50px;
+    padding: 10px 40px;
     border-radius: 20px;
     font-size: 15px;
     cursor: pointer;
     transition: background 0.3s ease;
 }
 
-    .btn-enviar input:hover {
-        background-color: #003080;
-    }
+.btn-enviar input:hover {
+    background-color: #003080;
+}
 
 /* Logo */
 #imgLogo img {
@@ -162,7 +171,7 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 70px;
+    top: 110px;
     right: 40px;
     background-color: #d0d2f7;
     padding: 5px;
