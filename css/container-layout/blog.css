@@ -117,16 +117,17 @@
 /* Blog 1 - fundo branco tela cheia */
 .blog-section {
     width: 100%;
-    min-height: 100vh; /* ocupa tela inteira */
+    padding: 117px 0; 
+    min-height: auto;
     margin: 0;
     background-color: #ffffff;
     color: #000;
-    padding: 40px 0;
+    
 }
 
 .blog-section h2 {
     width: 80%;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 65px auto; 
     font-size: 24px;
 }
 
@@ -139,91 +140,148 @@
 }
 
 .post.destaque img {
-    width: 350px;
+    width: 370px;
     border-radius: 12px;
+    cursor: pointer;
 }
 
 .miniaturas {
     width: 80%;
-    margin: 20px auto 0 auto;
+    margin: 120px auto 0 auto; /* afastado do post de destaque */
     display: flex;
-    gap: 10px;
+    gap: 50px;
 }
 
 .miniaturas img {
-    width: 20%;   /* cada uma ocupa 20% da largura */
-    max-width: 250px; /* limite pra não estourar */
-    border-radius: 8px;
+    width: 310px; /* mesmo tamanho do post destaque */
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover; /* mantém proporção bonita */
+    cursor: pointer; 
+}
+/* Animações miniaturas */
+.miniaturas img,
+.post.destaque img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+}
+
+.miniaturas img:hover,
+.post.destaque img:hover {
+    transform: scale(1.05); /* aumenta levemente */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* sombra suave */
 }
 
 
 /* Blog 2 - fundo preto tela cheia */
 .blog-section2 {
     width: 100%;
-    min-height: 100vh; /* ocupa tela inteira */
-    margin: 0;
+    padding: 120px 0;
     background-color: #1e1e1e;
     color: #fff;
-    padding: 40px 0;
 }
 
+/* Título */
 .blog-section2 h2 {
     width: 80%;
-    margin: 0 auto 20px auto;
-    font-size: 24px;
+    margin: 0 auto 40px auto;
+    font-size: 26px;
+    font-weight: 600;
 }
 
+/* Grid principal */
 .blog-grid {
     width: 80%;
     margin: 0 auto;
-    display: flex;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* esquerda maior / direita menor */
+    gap: 40px;
 }
 
+/* Post grande horizontal (esquerda) */
 .post.horizontal {
     display: flex;
     gap: 20px;
-    flex: 2;
+    align-items: flex-start;
 }
 
 .post.horizontal img {
-    width: 250px;
-    border-radius: 10px;
+    width: 260px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform .3s ease, opacity .3s ease;
+    cursor: pointer;
 }
 
+.post.horizontal img:hover {
+    transform: scale(1.03);
+    opacity: 0.85;
+}
+
+
+.post.horizontal .conteudo h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.post.horizontal .conteudo p {
+    font-size: 15px;
+    line-height: 20px;
+    opacity: 0.9;
+}
+
+/* Sidebar (direita) */
 .sidebar {
-    flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
 }
 
 .sidebar .card {
-    background-color: #2a2a2a;
-    padding: 10px;
-    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #262626;
+    padding: 12px;
+    border-radius: 10px;
     color: #fff;
+    transition: transform .3s ease, opacity .3s ease;
+    cursor: pointer;
 }
 
 .sidebar .card img {
-    width: 100%;
-    border-radius: 6px;
+    width: 95px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform .3s ease, opacity .3s ease;
+}
+
+.sidebar .card:hover {
+    transform: scale(1.03);
+    opacity: 0.9;
+}
+
+.sidebar .card p {
+    font-size: 14px;
+    line-height: 18px;
 }
 
 /* Botão flutuante */
 .button {
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    border: none;
-    background-color: #D9D9D9;
-    cursor: pointer;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: none;
+  background-color: #D9D9D9;
+  cursor: pointer;
 }
 
 #imgChatbot {
-    width: 40px;
-    height: auto;
+  width: 40px;
+  height: auto;
 }
