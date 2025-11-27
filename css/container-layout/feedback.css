@@ -30,79 +30,82 @@
 }
 
 .formulario{
-    margin: 0;
-    height: 108vh; 
+    margin: 0 auto;
+    min-height: 70vh; 
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     background-image: linear-gradient(to right,#b0b9c2, #93bae1);
-    width: 80%;
-    margin-top: 1.5%;
+    width: 75%;
+    margin-top: 4vh;
     border-radius: 15px;
-    max-width: 1500px;
+    max-width: 1000px;
+    padding: 2%;
 }
 
 .feedback{
     display: flex;
     align-items: center;
-    padding: 0 20%;
+    gap: 2%;
+    margin: 2% 0;
+    width: 90%;
+    text-align: left;
 }
 
 
 .feedback img{
-    height: 10vh;
-    margin: 0 auto;
-    display: block;
-    margin-top: 6%;
+    height: 6vh;
+    margin: 0;
 }
 
 .feedback h1{
-    margin: 0 auto;
-    font-size: 20px;
+    font-size: 2.2vh;
+    margin: 0;
     font-weight: bold;
-    margin-top: 6%;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .feedback h3{
-    margin: 0 auto;
-    margin-left: 4%;
-    margin-top: 6%;
-    font-size: 16px;
+    font-size: 1.8vh;
+    margin: 0;
     font-weight: normal;
-    color: #000000;
-    display: flex;
-    flex-wrap: wrap;
+    color: #333;
 }
 
 .areaMSG{
     display: flex;
     justify-content: center;
-    margin-top: 0.5%;
+    margin-top: 1%;
+    width: 100%;
 }
 
 .areaMSG textarea{
-    padding: 1%;
-    font-size: 14px;
+    width: 90%;
+    height: 55vh;
+    padding: 1.5%;
+    font-size: 1.8vh;
     font-family: "Poppins", sans-serif;
     border-radius: 5px;
-    border: 2px solid #000000;
+    border: 1px solid #ccc;
+    resize: none;
 }
 
 .btn-enviar {
     display: flex;
     justify-content: center;
     margin-top: 2%;
+    width: 100%;
 }
 
 .btn-enviar input {
     background-color: #004aad;
     color: #fff;
     border: none;
-    padding: 10px 50px;
+    padding: 1.5vh 5vh;
     border-radius: 20px;
-    font-size: 16px;
+    font-size: 2vh;
     cursor: pointer;
+    transition: background 0.3s ease;
 }
 
 .btn-enviar input:hover {
