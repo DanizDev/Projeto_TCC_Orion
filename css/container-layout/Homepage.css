@@ -3,9 +3,10 @@
     align-items: center;
     flex-wrap: wrap;
     background-image: linear-gradient(to right, #011C42, #084787);
-    justify-content: space-between;
+    justify-content: flex-start;
     height: auto;
     padding: 0 1%;
+    gap: 80%;
 }
 
 .container-principal {

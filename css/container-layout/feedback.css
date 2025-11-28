@@ -31,22 +31,23 @@
 
 .formulario{
     margin: 0 auto;
-    min-height: 70vh; 
+    height: 66vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     background-image: linear-gradient(to right,#b0b9c2, #93bae1);
     width: 75%;
-    margin-top: 4vh;
+    margin-top: 2vh;
     border-radius: 15px;
-    max-width: 1000px;
+    max-width: 960px;
     padding: 2%;
 }
 
 .feedback{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 2%;
     margin: 2% 0;
     width: 90%;
@@ -75,13 +76,13 @@
 .areaMSG{
     display: flex;
     justify-content: center;
-    margin-top: 1%;
+    margin-top: -1%;
     width: 100%;
 }
 
 .areaMSG textarea{
-    width: 90%;
-    height: 55vh;
+    width: 93%;
+    height: 48vh;
     padding: 1.5%;
     font-size: 1.8vh;
     font-family: "Poppins", sans-serif;
@@ -101,9 +102,9 @@
     background-color: #004aad;
     color: #fff;
     border: none;
-    padding: 1.5vh 5vh;
+    padding: 10px 40px;
     border-radius: 20px;
-    font-size: 2vh;
+    font-size: 14px;
     cursor: pointer;
     transition: background 0.3s ease;
 }
