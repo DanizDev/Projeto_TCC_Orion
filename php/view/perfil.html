@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/componentes/CCB.css">
+    <link rel="stylesheet" href="../../css/componentes/navs.css">
+    <script src="../../js/navbar.js"></script>
     <link rel="stylesheet" type="text/css" href="../../css/componentes/Reponsividade.css">
-    <link rel="stylesheet" type="text/css" href="../../css/container-layout/perfil.css">
+    <link rel="stylesheet" type="text/css" href="../../css/container-layout/perfil.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <!-- Define o ícone (favicon) que aparece na aba do navegador -->
     <link rel="icon" href="../../src/images/orion.png" type="image/x-icon" />
@@ -14,31 +17,30 @@
 </head>
 
 <body>
+  <body>
     <header>
-        <div class="cabecalho">
-            <a href="../view/Home.html">
-                <img alt="Logo" id="imgLogo" src="../../src/images/orion.png">
-            </a>
+      <div class="cabecalho">
+        <a id="imgLogo" href="../view/Home.html">
+          <img alt="Logo" src="../../src/images/orion.png"/>
+        </a>
 
-            <nav class="nav-links">
-                <a href="../../php/view/TelaPosLogin.html">Sobre nós</a>
-                <a href="../../php/view/planos.html">Assinaturas</a>
-                <a href="../../php/view/Blog.html">Blog</a>
-            </nav>
+        <nav class="nav-links">
+          <a href="./TelaPosLogin.html">Sobre nós</a>
+          <a href="./planos.html">Assinatura</a>
+          <a href="./Blog.html">Blog</a>
+        </nav>
 
-            <div class="user" onclick="mostrarMenu()">
-                <i class="fas fa-user" alt="Foto do usuário"></i>
-            </div>
-
-            <nav class="menu" id="menuSuspenso">
-                <a href="##"><i class="fa-solid fa-pen"></i></a>
-                <a href="##"><i class="fa-solid fa-house"></i></a>
-                <a href="##"><i class="fa-solid fa-right-to-bracket"></i></a>
-            </nav>
-           
+        <div class="user" onclick="mostrarMenu()">
+          <i class="fas fa-user" alt="Foto do usuário"></i>
         </div>
-    </header>
 
+        <nav class="menu" id="menuSuspenso">
+          <a href="./perfil.html"><i class="fa-solid fa-pen"></i></a>
+          <a href="./Home.html"><i class="fa-solid fa-house"></i></a>
+          <a href="../controller/Logout.php"><i class="fa-solid fa-right-to-bracket"></i></a>
+        </nav>
+      </div>
+    </header>
 
     <div class="container-principal">
 
@@ -94,14 +96,14 @@
         </div>
     </div>
 
-    <div class="chat">
-        <button>
-            <img src="../../src/images/Icons/robos.png" alt="">
+   <div class="chatbot">
+        <button class="button">
+            <img id="imgChatbot" alt="chatbot" src="../../src/images/robos.png">
         </button>
     </div>
+    
 
-
-
+  </body>
 </body>
 
 </html>

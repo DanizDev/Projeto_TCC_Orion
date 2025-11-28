@@ -10,15 +10,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 600px;   
-    height: 380px;
+    margin: 10% 28%;
+    padding: 40px;
     border: none;
     border-radius: 10px;
     background-color: #fff;
     color: #0c70d3;
     font-size: 20px;
     font-family: "Lexend", sans-serif;
-    margin: auto; 
 }
 
 
@@ -102,5 +101,13 @@ input{
 
   .imgLogo {
     margin: 0;
+  }
+
+    input, button{
+    width: 100%;
+  }
+
+  input::placeholder{
+    color: #D9D9D9;
   }
 }

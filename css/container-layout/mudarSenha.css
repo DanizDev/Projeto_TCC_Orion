@@ -22,8 +22,8 @@ body{
   background-color: #ffffff;
   font-size: 20px;
   background-color: azure;
-  margin: 10% 20%;
-  padding: 5% ;
+  margin: 10% 30%;
+  padding: 40px;
 }
 
 
@@ -90,7 +90,27 @@ input{
 /* RESPONSIVIDADE */
 /*Utilizar se quiser(deixa responsivo em qualquer tela.)*/
 @media (max-width: 768px) {
-  input, button{
+
+
+  body {
+    width: 100%;
+  }
+
+  .cabecalho {  
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .nav-links {
+    margin: auto 0;
+  }
+
+  .imgLogo {
+    margin: 0;
+  }
+
+    input, button{
     width: 100%;
   }
 
