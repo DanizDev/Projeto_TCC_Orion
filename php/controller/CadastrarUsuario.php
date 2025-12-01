@@ -1,5 +1,6 @@
 <?php
     require_once '../model/Conexao.php';
+    require_once '../controller/AutenticarEmail.php';
 
     $email = $_POST['emailUsuario'];
     $nome  = $_POST['nomeUsuario'];
@@ -27,6 +28,9 @@
         $requisicao->bindParam(':email', $email);
         $requisicao->bindParam(':nome', $nome);
         $requisicao->bindParam(':senha', $senhaHash);
+
+        AutenticatorPlus($email, $nome, $conexao);
+
         try{
             $requisicao->execute();
             echo"<script> 

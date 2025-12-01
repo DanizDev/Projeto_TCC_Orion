@@ -3,9 +3,10 @@
     align-items: center;
     flex-wrap: wrap;
     background-image: linear-gradient(to right, #011C42, #084787);
-    justify-content: space-between;
+    justify-content: flex-start;
     height: auto;
     padding: 0 1%;
+    gap: 80%;
 }
 
 .container-principal {
@@ -40,7 +41,7 @@ body {
     min-height: 80vh; 
     display: flex;
     flex-direction: column;
-    background-color: #ffffff;
+    background-image: linear-gradient(to right, #0a182c, #074f97);
     opacity: 1;
     width: 75%;
     box-sizing: border-box;
@@ -55,9 +56,10 @@ body {
 .Logo{
     display: flex;
     align-items: flex-start;
-    gap: 1.5rem; /* espaço entre imagem e texto */
+    gap: 2rem; /* espaço entre imagem e texto */
     margin-bottom: 9%;
     flex-wrap: wrap;
+    text-align: left;
 }
 
 
@@ -72,8 +74,8 @@ body {
 
 .Logo h1{
     display: flex;
-    margin-top: 12%;
-    color: #2b2b2b;
+    margin-top: 8%;
+    color: #ffffff;
     font-size: 3.0rem;
     font-family: "Lexend", sans-serif ;
     font-weight: 300;
@@ -84,15 +86,22 @@ body {
     align-items: center;   
     flex-wrap: wrap;
     gap: 1.1rem;  
-    margin-top: -15%;
+    margin-top: -20%;
     margin-left: 54%;
 }
 
 p{
     font-family: "Lexend", sans-serif;
     font-weight: 300;
+    margin-top: -37%;
+    margin-left: 48%;    
+    color: #fff;
+    line-height: 1.4;
+    max-width: 500px;
     
 }
+
+
 
 .contratar input[type="submit"] {
     display: flex;
@@ -103,7 +112,7 @@ p{
     font-weight: 400;
     cursor: pointer;
     border: none;
-    background-color:#ababab ;
+    background-color:#ffffff ;
     flex-wrap: wrap;
 }
 
@@ -111,7 +120,7 @@ p{
     display: flex;
     text-decoration: none;
     font-size: 18px;
-    color: #2d2d2d;
+    color: #ffffff;
     font-family: "Lexend", sans-serif;
 }
 
@@ -123,7 +132,7 @@ p{
 }
 .contratar a:hover{
     transition: 0.5s all;
-    color: #ffffff;
+    color: #b1abab;
 }
 
 

@@ -1,6 +1,4 @@
 
-
-
 .container-principal {
   display: flex;
   flex-direction: column;
@@ -54,5 +52,3 @@
   height: auto;
 }
 
-/* RESPONSIVIDADE */
-/*Utilizar se quiser(deixa responsivo em qualquer tela.)*/

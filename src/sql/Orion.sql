@@ -84,3 +84,10 @@ CREATE TABLE Assinatura (
     FOREIGN KEY (IdPlano) REFERENCES Planos(IdPlano),
     FOREIGN KEY (IdPagamento) REFERENCES Pagamento(IdPagamento)
 );
+
+CREATE TABLE autenticacao(
+    id_autenticacao INT AUTO_INCREMENT PRIMARY KEY,
+    data_aut DATETIME NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    codigo VARCHAR(10) NOT NULL
+);
