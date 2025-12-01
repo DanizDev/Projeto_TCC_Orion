@@ -1,12 +1,10 @@
 .cabecalho{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    background-image: linear-gradient(to right, #011C42, #084787);
-    justify-content: flex-start;
-    height: auto;
-    padding: 0 1%;
-    gap: 80%;
+   display: flex;
+  align-items: center;
+  flex-direction: row;
+  background-image: linear-gradient(to right, #011C42, #084787);
+  padding: 10px 20px;
+  justify-content: space-between;
 }
 
 .container-principal {
@@ -151,6 +149,7 @@ p{
   gap: 4.0rem;
   margin-right: 1%;
   flex-wrap: wrap;
+  margin-left: auto;
 }
 
 .nav-links a {

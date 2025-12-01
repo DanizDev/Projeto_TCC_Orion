@@ -50,7 +50,8 @@ session_start();
             <div class="Logo">
                 <img src="../../src/images/orion.png" alt="Logo da IA">
                 <h1>Orion IA</h1>
-                <p style="display: block; text-align: justify; ">
+                <p style="display: block; text-align: justify; font-size: 14px; ">
+                    <br>
     A Orion IA tem como propósito garantir a máxima proteção ao seu dispositivo e à integridade 
     de seus dados sensíveis, por meio de Inteligência Artificial voltada à detecção e prevenção 
     de ameaças cibernéticas. Nosso compromisso é oferecer soluções eficazes e seguras, assegurando 
