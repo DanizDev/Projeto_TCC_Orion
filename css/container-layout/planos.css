@@ -5,6 +5,7 @@
     margin-left: 10px;
     cursor: pointer;
   }
+
   /*background-color: rgb(19, 117, 237);
   /*#dcbaba*/
 
@@ -25,7 +26,6 @@
   }
 
   /* ===== BOTÃO ===== */
-
   .botao:hover {
     background-color: #1d4ed8;
     transform: translateY(-3px);
@@ -251,5 +251,26 @@
 
 
 
+@media (max-width: 768px) {
 
+
+  body {
+    width: 100%;
+  }
+
+  .cabecalho {  
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .nav-links {
+    margin: auto 0;
+  }
+
+  .imgLogo {
+    margin: 0;
+  }
+
+}
 
