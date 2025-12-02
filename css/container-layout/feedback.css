@@ -30,28 +30,26 @@
 }
 
 .formulario{
-    margin: 0 auto;
-    height: 66vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    background-image: linear-gradient(to right,#b0b9c2, #93bae1);
-    width: 75%;
-    margin-top: 2vh;
-    border-radius: 15px;
-    max-width: 960px;
-    padding: 2%;
+  margin: 0 auto;
+  min-height: 70vh; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-image: linear-gradient(to right,#b0b9c2, #93bae1);
+  width: 75%;
+  margin-top: 30px;
+  border-radius: 15px;
+  max-width: 1000px;
+  padding: 20px;
 }
 
 .feedback{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2%;
-    margin: 2% 0;
-    width: 90%;
-    text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px;
+  text-align: left;
 }
 
 
@@ -61,13 +59,13 @@
 }
 
 .feedback h1{
-    font-size: 2.2vh;
+    font-size: 3.0vh;
     margin: 0;
     font-weight: bold;
 }
 
 .feedback h3{
-    font-size: 1.8vh;
+    font-size: 2.5vh;
     margin: 0;
     font-weight: normal;
     color: #333;
@@ -82,9 +80,9 @@
 
 .areaMSG textarea{
     width: 93%;
-    height: 48vh;
+    height: 70vh;
     padding: 1.5%;
-    font-size: 1.8vh;
+    font-size: 1.9vh;
     font-family: "Poppins", sans-serif;
     border-radius: 5px;
     border: 1px solid #ccc;
